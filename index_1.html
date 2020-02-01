@@ -18,7 +18,7 @@
         <!--Header-->
             <header>
                 <img class="logo" src="sources/logo.png" alt="Logo">
-                <h1 class="nombre_hotel">Nombre Hotel</h1>
+                <h1 class="nombre_hotel"><span>Nombre Hotel</span></h1>
                 <div id="menu-movil-btn" class="menu">
                     <span></span>
                     <span></span>
@@ -41,9 +41,9 @@
         <!--Slider-->
             <div id="seccion-galeria" class="seccion">
                 <div class="galeria-container">
-                    <div><img id="img-gal-1" src="sources/gal1.jpg" alt="Galeria"></div>
-                    <div><img id="img-gal-2" src="sources/gal2.jpg" alt="Galeria"></div>
-                    <div><img id="img-gal-3" src="sources/video.png" alt="Galeria"></div>
+                    <div><img id="img-gal-1" src="sources/gal1.jpeg" alt="Galeria"></div>
+                    <div><img id="img-gal-2" src="sources/gal2.jpeg" alt="Galeria"></div>
+                    <div><img id="img-gal-3" src="sources/gal3.jpeg" alt="Galeria"></div>
                 </div>
             </div>
         <!--//Slider-->
@@ -81,11 +81,6 @@
                         <span>Icono</span>
                         <h3 class="titulo-servicio">Wi-Fi</h3>
                         <p class="info-servicio">Esta es una breve descripción para el servicio ofrecido en el título de arriba.</p class="info-servicio">
-                    </div>
-                    <div id="servicio-5" class="servicio">
-                        <span>Icono</span>
-                        <h3 class="titulo-servicio">Wi-Fi</h3 class="titulo-servicio">
-                        <p class="info-servicio">Esta es una breve descripción para el servicio ofrecido en el título de arriba.</p>
                     </div>
 
                 </div>
@@ -127,15 +122,6 @@
                         </div>
                     </div>
 
-                    <div id="hab-4" class="hab">
-                        <img src="sources/room1.jpg" alt="Habitacion">
-                        <div class="sombra">
-                            <div class="descripción">
-                                <h3>Habitación 4</h3>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consequatur debitis, consequuntur, unde aperiam, at incidunt recusandae est perspiciatis quis similique quae architecto! Et fugit incidunt unde maxime numquam officiis.
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -143,21 +129,25 @@
 
     <!--//Contacto-->
         <div id="seccion-contacto" class="seccion">
-            <h2>Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5476.90409821555!2d-99.13274247200724!3d19.433730004993603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x85d1fecd4864aaff%3A0x6bbfb5044e16e6d8!2sCentro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!3m2!1d19.4326018!2d-99.1332049!5e0!3m2!1ses!2smx!4v1580357588904!5m2!1ses!2smx" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-            <h2>Contacto</h2>
-            <form action="">
-                <div class="grupo">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <button>Enviar</button>
-            </form>
+            <div>
+                <h2>Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5476.90409821555!2d-99.13274247200724!3d19.433730004993603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x85d1fecd4864aaff%3A0x6bbfb5044e16e6d8!2sCentro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!3m2!1d19.4326018!2d-99.1332049!5e0!3m2!1ses!2smx!4v1580357588904!5m2!1ses!2smx" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            
+            <div>
+                <h2>Contacto</h2>
+                <form action="">
+                    <div class="grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
         </div>
     <!--//Contacto-->
 
@@ -207,15 +197,18 @@
         }
 
         $(document).ready(function(){
-            let height = 186.2;
+            let height = $(window).width() < 600 ? 186.2 : 250;
 
             // Galería
                 $('.galeria-container').slick({
-                    adaptiveHeight:true,
                     arrows:true,
+                    autoplay:true,
+                    infinite:true,
+                    centerMode:true,
                     mobileFirst:true,
+                    pauseOnFocus:true,
                     variableWidth:true,
-                    autoplay:true
+                    //adaptiveHeight:true,
                 });
             //-Galería
 
@@ -246,7 +239,15 @@
                     $('#'+this.parentNode.id).children(".sombra").fadeOut("slow");
                     return false;
                 });
+                $(".sombra").mouseleave(function(){
+                    $('#'+this.parentNode.id).children(".sombra").fadeOut("slow");
+                    return false;
+                });
                 $(".hab").click(function(){
+                    $('#'+this.id).children(".sombra").fadeIn("slow");
+                    return false;
+                });
+                $(".hab").mouseenter(function(){
                     $('#'+this.id).children(".sombra").fadeIn("slow");
                     return false;
                 });
