@@ -9,6 +9,7 @@ body {
 
 header {
   display: grid;
+  padding-bottom: 1%;
   grid-template-columns: 20% 70% 10%; }
   header .logo {
     padding: 5% 0 0 5%;
@@ -18,17 +19,31 @@ header {
     font-size: 2em; }
   header .menu {
     cursor: pointer;
-    padding: 50% 20%; }
+    padding: 95% 20% 0% 20%; }
     header .menu span {
       width: 100%;
       display: block;
       margin-bottom: 25%;
       border-top: 3px solid #000; }
 
-#seccion-galeria .galeria-container img {
-  height: 310px; }
-#seccion-galeria .galeria-container .slick-arrow {
-  z-index: 1; }
+#menu-movil {
+  height: 0px;
+  display: none;
+  text-align: right;
+  background-color: rgba(194, 194, 194, 0.418); }
+  #menu-movil a {
+    padding: 1%;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #fff; }
+
+#seccion-galeria {
+  margin-top: 3%; }
+  #seccion-galeria .galeria-container img {
+    height: 310px; }
+  #seccion-galeria .galeria-container .slick-arrow {
+    z-index: 1; }
 
 #seccion-servicios {
   padding-bottom: 5%;

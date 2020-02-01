@@ -15,6 +15,7 @@ body{
 //Header
 header{
     display: grid;
+    padding-bottom: 1%;
     grid-template-columns: 20% 70% 10%;
     .logo{
         padding: 5% 0 0 5%;
@@ -26,7 +27,7 @@ header{
     }
     .menu{
         cursor: pointer;
-        padding: 50% 20%;
+        padding: 95% 20% 0% 20%;
         span{
             width: 100%;
             display: block;
@@ -37,8 +38,25 @@ header{
 }
 //-Header
 
+//Menú Móvil
+#menu-movil{
+    height: 0px;
+    display: none;
+    text-align: right;
+    background-color: $color_2;
+    a{
+        padding: 1%;
+        display: block;
+        color: $color_1;
+        text-decoration: none;
+        border-bottom: 2px solid #fff;
+    }
+}
+//-Menú Móvil
+
 //Galeria
 #seccion-galeria{
+    margin-top: 3%;
     .galeria-container{
         img{
             height: 310px;

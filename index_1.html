@@ -16,16 +16,27 @@
     </head>
     <body>
         <!--Header-->
-            <header class="seccion">
+            <header>
                 <img class="logo" src="sources/logo.png" alt="Logo">
                 <h1 class="nombre_hotel">Nombre Hotel</h1>
-                <div class="menu">
+                <div id="menu-movil-btn" class="menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </header>
         <!--//Header-->
+
+        <!-- Menú Móvil -->
+        <div id="menu-movil">
+            <a href="#seccion-galeria">Galeria</a>
+            <a href="#seccion-video">Video</a>
+            <a href="#seccion-servicios">Servicios</a>
+            <a href="#seccion-habs">Habitaciones</a>
+            <a href="#seccion-contacto">Ubicación</a>
+            <a href="#seccion-contacto">Contacto</a>
+        </div>
+        <!-- //Menú Móvil -->
         
         <!--Slider-->
             <div id="seccion-galeria" class="seccion">
@@ -196,6 +207,7 @@
         }
 
         $(document).ready(function(){
+            let height = 186.2;
 
             // Galería
                 $('.galeria-container').slick({
@@ -203,8 +215,31 @@
                     arrows:true,
                     mobileFirst:true,
                     variableWidth:true,
+                    autoplay:true
                 });
             //-Galería
+
+            //Menú Móvil
+            $('#menu-movil-btn').click(function(){
+                if($('#menu-movil').height() > 0){
+                    let links = $('#menu-movil').children('a');
+                    height = links.outerHeight() * links.length;
+
+                    $('#menu-movil').animate({
+                        height: '0px'
+                    }, 1000, function(){
+                        $('#menu-movil').hide();
+                    });
+
+                }else{
+                    $('#menu-movil').show("fast", function() {
+                        $('#menu-movil').animate({
+                            height: height+'px'
+                        }, 1000);
+                    });
+                }
+            });
+            //-Menú Móvil
 
             //Info de las Habs
                 $(".sombra").click(function(){
