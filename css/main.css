@@ -1,31 +1,51 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: Arial, Sans-serif, serif; }
 
 .seccion {
   width: 100%;
   margin-bottom: 5%; }
   .seccion h2 {
     text-align: center; }
+    .seccion h2 span {
+      padding: 0 2%;
+      border-bottom: 2px solid #ee267d; }
+
+.logo {
+  max-width: 80%; }
+  @media (min-width: 768px) {
+    .logo {
+      max-width: 90%; } }
 
 header {
   display: grid;
   padding-bottom: 1%;
-  grid-template-columns: 20% 70% 10%; }
+  grid-template-columns: 40% 45% 15%; }
   @media (min-width: 768px) {
     header {
       grid-template-columns: 20% 60% 20%; } }
   header .logo {
-    padding: 5% 0 0 5%;
+    padding: 6% 0 0 5%;
     width: 100%; }
+    @media (min-width: 768px) {
+      header .logo {
+        padding: 5% 0 0 5%; } }
   header .nombre_hotel {
-    padding: 4% 0; }
+    padding: 4% 0 0 0; }
     header .nombre_hotel h1 {
       margin: 0;
-      padding-left: 5%;
-      font-size: 1.7em; }
+      font-size: 1.4em;
+      text-align: center;
+      font-family: Arial, Sans-serif, serif; }
       @media (min-width: 768px) {
         header .nombre_hotel h1 {
-          padding-left: 10%; } }
+          font-size: 1.7em; } }
+      header .nombre_hotel h1 span {
+        display: none;
+        vertical-align: sub; }
+        @media (min-width: 768px) {
+          header .nombre_hotel h1 span {
+            display: block; } }
   header .tels-dsk {
     display: none;
     padding: 5% 0; }
@@ -34,9 +54,12 @@ header {
         display: block; } }
     header .tels-dsk div {
       margin: 4% 0; }
+    header .tels-dsk img {
+      width: 20px;
+      vertical-align: bottom; }
   header .menu {
     cursor: pointer;
-    padding: 95% 20% 0% 20%; }
+    padding: 31% 20% 0% 20%; }
     @media (min-width: 768px) {
       header .menu {
         display: none; } }
@@ -173,14 +196,24 @@ header {
   width: 100%; }
 #seccion-contacto form {
   margin: 4%; }
+  #seccion-contacto form .campo-vacio {
+    border: 1px solid red; }
   #seccion-contacto form .grupo {
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-row-gap: 4%; }
+  #seccion-contacto form .grupo-2 {
+    display: grid;
+    margin-top: 8%;
+    grid-template-columns: 80% 20%;
+    grid-row-gap: 4%; }
   #seccion-contacto form button {
     margin: 3% 0;
     float: right; }
+  #seccion-contacto form #campos-rojos, #seccion-contacto form #envio_fallido {
+    color: red;
+    display: none; }
 
 footer {
   width: 100%;
@@ -189,13 +222,20 @@ footer {
   margin-top: 15%;
   background-color: rgba(194, 194, 194, 0.418);
   justify-items: center;
-  grid-template-columns: 25% 50% 25%; }
+  grid-template-columns: 50% 50%; }
   @media (min-width: 768px) {
     footer {
       margin-top: 10%; } }
-  footer .logo {
-    height: 100%; }
-  footer a {
-    display: block; }
+  footer .redes-sociales {
+    width: 100%;
+    text-align: center; }
+    footer .redes-sociales a {
+      display: inline-block;
+      margin: 5%; }
+      footer .redes-sociales a img {
+        width: 20px; }
+        @media (min-width: 768px) {
+          footer .redes-sociales a img {
+            width: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

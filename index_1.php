@@ -1,19 +1,22 @@
 <?php
     $info_hotel = array(
-        'nombre'        =>  'Hotel Galería',
-        'logo'          =>  'logo.png',
-        'ciudad'        =>  'Macuspana',
-        'estado'        =>  'Tabasco',
-        'direccion'     =>  'Prueba',
-        'telefono'      =>  '5543461790',
-        'whatsapp'      =>  '5543461790',
-        'whatsapp_msj'  =>  str_replace("/\s+/", "","Hola me gustaría obtener informes sobre sus habitaciones"),
-        'correo'        =>  'albaizt@gmail.com',
-        'facebook'      =>  'https://www.fb.com',
-        'instagram'     =>  'https://www.instagram.com',
-        'twitter'       =>  'https://www.twitter.com',
-        'youtube'       =>  'https://www.youtube.com',
+        'nombre'            =>  'Hotel Galería',
+        'logo'              =>  'logo.png',
+        'ciudad'            =>  'Macuspana',
+        'estado'            =>  'Tabasco',
+        'direccion'         =>  'Prueba',
+        'telefono'          =>  '5543461790',
+        'telefono_txt'      =>  '55 43 46 17 90',
+        'whatsapp'          =>  '5543461790',
+        'whatsapp_txt'      =>  '55 43 46 17 90',
+        'whatsapp_msj'      =>  str_replace("/\s+/", "","Hola me gustaría obtener informes sobre sus habitaciones"),
+        'correo'            =>  'albaizt@gmail.com',
+        'facebook'          =>  'https://www.fb.com',
+        'instagram'         =>  'https://www.instagram.com',
+        'twitter'           =>  'https://www.twitter.com',
+        'youtube'           =>  'https://www.youtube.com',
     );
+
     $galeria = array(
         array(
             "imagen"  => "gal1.jpeg",
@@ -30,28 +33,28 @@
     );
 
     $video = array(
-            "url"  => "https://www.youtube.com/embed/N-Yu7MDxlx4",
-            "nombre" => "Video de Presentación",
+        "url"  => "https://www.youtube.com/embed/N-Yu7MDxlx4",
+        "nombre" => "Video de Presentación",
     );
 
     $servicios = array(
         array(
-            "icono"  => "Icono",
+            "icono"  => "twitter.png",
             "nombre" => "Wi-Fi",
             "texto"  => "Gratis en todo el hotel, con buena covertura y velocidad.",
         ),
         array(
-            "icono"  => "Icono",
+            "icono"  => "facebook.png",
             "nombre" => "Alberca",
             "texto"  => "Techada con agua caliente abierta de 8am a 6pm.",
         ),
         array(
-            "icono"  => "Icono",
+            "icono"  => "twitter.png",
             "nombre" => "Bar",
             "texto"  => "Dando servicio desde las 8pm hasta las 3am.",
         ),
         array(
-            "icono"  => "Icono",
+            "icono"  => "facebook.png",
             "nombre" => "Restaurante",
             "texto"  => "Con horario desde las 7am hasta las 10pm.",
         ),
@@ -92,18 +95,19 @@
         <script type="text/javascript" src="vendor/slick-1.8.1/slick/slick.min.js"></script>
 
         <title><?php echo $info_hotel['nombre']." de ".$info_hotel['ciudad'].", ".$info_hotel['estado']; ?></title>
-
     </head>
     <body>
         <!--Header-->
             <header>
-                <img class="logo" src="sources/<?php echo $info_hotel['logo']; ?>" alt="Logo">
+                <div>
+                    <img class="logo" src="sources/<?php echo $info_hotel['logo']; ?>" alt="Logo">
+                </div>
                 <div class="nombre_hotel">
                     <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
                 </div>
                 <div class="tels-dsk">
-                    <?php if($info_hotel["telefono"]){ ?><div>Teléfono: <?php echo $info_hotel['telefono']; ?></div><?php } ?>
-                    <?php if($info_hotel["whatsapp"]){ ?><div">Whatsapp: <?php echo $info_hotel['whatsapp']; ?></div><?php } ?>
+                    <?php if($info_hotel["telefono_txt"]){ ?><div><img src="sources/telefono.png" alt="Teléfono"> <?php echo $info_hotel['telefono_txt']; ?></div><?php } ?>
+                    <?php if($info_hotel["whatsapp_txt"]){ ?><div"><img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?></div><?php } ?>
                 </div>
                 <div id="menu-movil-btn" class="menu">
                     <span></span>
@@ -114,14 +118,14 @@
         <!--//Header-->
 
         <!-- Menú Móvil -->
-        <div id="menu-movil">
-            <a href="#seccion-galeria">Galeria</a>
-            <a href="#seccion-video">Video</a>
-            <a href="#seccion-servicios">Servicios</a>
-            <a href="#seccion-habs">Habitaciones</a>
-            <a href="#seccion-contacto">Ubicación</a>
-            <a href="#seccion-contacto">Contacto</a>
-        </div>
+            <div id="menu-movil">
+                <a href="#seccion-galeria">Galeria</a>
+                <a href="#seccion-video">Video</a>
+                <a href="#seccion-servicios">Servicios</a>
+                <a href="#seccion-habs">Habitaciones</a>
+                <a href="#seccion-contacto">Ubicación</a>
+                <a href="#seccion-contacto">Contacto</a>
+            </div>
         <!-- //Menú Móvil -->
         
         <!--Slider-->
@@ -142,12 +146,12 @@
 
         <!--Servicios-->
             <div id="seccion-servicios" class="seccion">
-                <h2>Servicios</h2>
+                <h2><span>Servicios</span></h2>
                 <div class="row-servicio">
 
                     <?php foreach ($servicios as $key_serv => $servicio) { ?>
                         <div id="servicio-<?php echo $key_serv; ?>" class="servicio">
-                            <span><?php echo $servicio["icono"]; ?></span>
+                            <img src="sources/<?php echo $servicio["icono"]; ?>" alt="<?php echo $servicio["nombre"]; ?>">
                             <h3 class="titulo-servicio"><?php echo $servicio["nombre"]; ?></h3 class="titulo-servicio">
                             <p class="info-servicio"><?php echo $servicio["texto"]; ?></p class="info-servicio">
                         </div>
@@ -159,7 +163,7 @@
         
         <!--Habitaciones-->
             <div id="seccion-habs" class="seccion">
-                <h2>Habitaciones</h2>
+                <h2><span>Habitaciones</span></h2>
                 <div class="row-habs">
 
                     <?php foreach ($habitaciones as $key_hab => $habitacion) { ?>
@@ -181,22 +185,29 @@
     <!--//Contacto-->
         <div id="seccion-contacto" class="seccion">
             <div>
-                <h2>Ubicación</h2>
+                <h2><span>Ubicación</span></h2>
                 <iframe src="<?php echo $mapa; ?>" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
             
             <div>
-                <h2>Contacto</h2>
-                <form action="">
+                <h2><span>Contacto</span></h2>
+                <form>
                     <div class="grupo">
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" id="telefono">
                         <label for="email">Email</label>
                         <input type="text" name="email" id="email">
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                     </div>
-                    <button>Enviar</button>
+                    <div class="grupo-2">
+                        <div id="espacio"></div>
+                        <div id="campos-rojos">* Favor de validar los campos en rojo.</div>
+                        <div id="envio_fallido">Hubo un problema con el envío por favor intente más tarde.</div>
+                        <button id="enviar_contacto">Enviar</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -204,16 +215,16 @@
 
     <!--//Footer-->
         <footer id="seccion-footer">
-            <div>
-                <?php if($info_hotel["telefono"]){ ?><a href="tel:<?php echo $info_hotel["telefono"]; ?>">Teléfono</a><?php } ?>
-                <?php if($info_hotel["whatsapp"]){ ?><a href="https://wa.me/52<?php echo $info_hotel["whatsapp"]; ?>?text=<?php echo $info_hotel["whatsapp_msj"]; ?>">Whatsapp</a><?php } ?>
-            </div>
-            <img class="logo" src="sources/logo.png" alt="Logo">
             <div class="redes-sociales">
-                <?php if($info_hotel["facebook"]){ ?><a target="_blank" href="<?php echo $info_hotel["facebook"]; ?>">Facebook</a><?php } ?>
-                <?php if($info_hotel["instagram"]){ ?><a target="_blank" href="<?php echo $info_hotel["instagram"]; ?>">Instagram</a><?php } ?>
-                <?php if($info_hotel["twitter"]){ ?><a target="_blank" href="<?php echo $info_hotel["twitter"]; ?>">Twitter</a><?php } ?>
-                <?php if($info_hotel["youtube"]){ ?><a target="_blank" href="<?php echo $info_hotel["youtube"]; ?>">Youtube</a><?php } ?>
+                <?php if($info_hotel["telefono"]){ ?><a href="tel:<?php echo $info_hotel["telefono"]; ?>"><img src="sources/telefono.png" alt="Teléfono"></a><?php } ?>
+                <?php if($info_hotel["whatsapp"]){ ?><a href="https://wa.me/52<?php echo $info_hotel["whatsapp"]; ?>?text=<?php echo $info_hotel["whatsapp_msj"]; ?>"><img src="sources/whatsapp.png" alt="Whatsapp"></a><?php } ?>
+            </div>
+            
+            <div class="redes-sociales">
+                <?php if($info_hotel["facebook"]){ ?><a target="_blank" href="<?php echo $info_hotel["facebook"]; ?>"><img src="sources/facebook.png" alt="Facebook"></a><?php } ?>
+                <?php if($info_hotel["instagram"]){ ?><a target="_blank" href="<?php echo $info_hotel["instagram"]; ?>"><img src="sources/instagram.png" alt="Instagram"></a><?php } ?>
+                <?php if($info_hotel["twitter"]){ ?><a target="_blank" href="<?php echo $info_hotel["twitter"]; ?>"><img src="sources/twitter.png" alt="Twitter"></a><?php } ?>
+                <?php if($info_hotel["youtube"]){ ?><a target="_blank" href="<?php echo $info_hotel["youtube"]; ?>"><img src="sources/youtube.png" alt="Youtube"></a><?php } ?>
             </div>
         </footer>
     <!--//Footer-->
@@ -306,6 +317,53 @@
                     return false;
                 });
             //-Info de las Habs
+
+            //Formulario de Contacto
+                $("#enviar_contacto").click(function(e){
+                    e.preventDefault();
+                    let enviar = true;
+
+                    $("#espacio").show();
+                    $("#campos-rojos").hide();
+                    $(".campo-vacio").removeClass("campo-vacio")
+
+                    if($("#nombre").val() == "" || typeof $("#nombre").val() == "undefined"){
+                        $("#nombre").addClass("campo-vacio");
+                        enviar = false;
+                    }
+                    if($("#email").val() == "" || typeof $("#email").val() == "undefined"){
+                        $("#email").addClass("campo-vacio");
+                        enviar = false;
+                    }
+                    if($("#telefono").val() == "" || typeof $("#telefono").val() == "undefined"){
+                        $("#telefono").addClass("campo-vacio");
+                        enviar = false;
+                    }
+                    if($("#mensaje").val() == "" || typeof $("#mensaje").val() == "undefined"){
+                        $("#mensaje").addClass("campo-vacio");
+                        enviar = false;
+                    }
+                    if(enviar){
+                        $.ajax({
+                            url: "dev/contacto.php",
+                        }).done(function() {
+                            $("#nombre").val("");
+                            $("#email").val("");
+                            $("#telefono").val("");
+                            $("#mensaje").val("");
+                        })
+                        .fail(function() {
+                            $("#envio_fallido").show();
+                        })
+                        .always(function() {
+                            //alert( "complete" );
+                        });
+                    } else {
+                        $("#espacio").hide();
+                        $("#campos-rojos").show();
+                    }
+                });
+            //-Formulario de Contacto
 
         });
     </script>

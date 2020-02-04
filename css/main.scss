@@ -2,6 +2,10 @@
 $color_1: #000;
 $color_2: rgba(194, 194, 194, 0.418);
 $color_3: #fff;
+$color_4: #ee267d;
+
+$font-title: Arial, Sans-serif, serif;
+$font-text: Arial, Sans-serif, serif;
 
 $screen_sm: '768px';
 $screen_md: '1024px';
@@ -9,34 +13,56 @@ $screen_lg: '1200px';
 
 body{
     margin: 0;
+    font-family: $font-text;
 }
 .seccion{
     width: 100%;
     margin-bottom: 5%;
     h2{
         text-align: center;
+        span{
+            padding: 0 2%;
+            border-bottom: 2px solid $color_4;
+        }
+    }
+}
+.logo{
+    max-width: 80%;
+    @media (min-width:$screen_sm){
+        max-width: 90%;
     }
 }
 //Header
 header{
     display: grid;
     padding-bottom: 1%;
-    grid-template-columns: 20% 70% 10%;
+    grid-template-columns: 40% 45% 15%;
     @media (min-width:$screen_sm){
         grid-template-columns: 20% 60% 20%;
     }
     .logo{
-        padding: 5% 0 0 5%;
+        padding: 6% 0 0 5%;
         width: 100%;
+        @media (min-width:$screen_sm){
+            padding: 5% 0 0 5%;
+        }
     }
     .nombre_hotel{
-        padding: 4% 0;
+        padding: 4% 0 0 0;
         h1{
             margin: 0;
-            padding-left: 5%;
-            font-size: 1.7em;
+            font-size: 1.4em;
+            text-align: center;
+            font-family: $font-title;
             @media (min-width:$screen_sm){
-                padding-left: 10%;
+                font-size: 1.7em;
+            }
+            span{
+                display: none;
+                vertical-align: sub;
+                @media (min-width:$screen_sm){
+                    display: block;
+                }
             }
         }
     }
@@ -49,10 +75,14 @@ header{
         div{
             margin: 4% 0;
         }
+        img{
+            width: 20px;
+            vertical-align: bottom;
+        }
     }
     .menu{
         cursor: pointer;
-        padding: 95% 20% 0% 20%;
+        padding: 31% 20% 0% 20%;
         @media (min-width:$screen_sm){
             display: none;
         }
@@ -236,15 +266,31 @@ header{
     }
     form{
         margin: 4%;
+        .campo-vacio{
+            border: 1px solid red;
+        }
         .grupo{
             margin-bottom: 5%;
             display: grid;
             grid-template-columns: 20% 80%;
             grid-row-gap: 4%;
         }
+        .grupo-2{
+            display: grid;
+            margin-top: 8%;
+            grid-template-columns: 80% 20%;
+            grid-row-gap: 4%;
+        }
         button{
             margin: 3% 0;
             float: right;
+        }
+        #campos-rojos{
+            color: red;
+            display: none;
+        }
+        #envio_fallido{
+            @extend #campos-rojos;
         }
     }
 }
@@ -258,14 +304,22 @@ footer{
     margin-top: 15%;
     background-color: $color_2;
     justify-items: center;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 50% 50%;
     @media (min-width:$screen_sm){
         margin-top: 10%;
     }
-    .logo{
-        height: 100%;
-    }
-    a{
-        display: block;
+    .redes-sociales{
+        width: 100%;
+        text-align: center;
+        a{
+            display: inline-block;
+            margin: 5%;
+            img{
+                width: 20px;
+                @media (min-width:$screen_sm){
+                    width: 30px;
+                }
+            }
+        }
     }
 }
