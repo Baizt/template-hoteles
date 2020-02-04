@@ -11,16 +11,29 @@ header {
   display: grid;
   padding-bottom: 1%;
   grid-template-columns: 20% 70% 10%; }
+  @media (min-width: 768px) {
+    header {
+      grid-template-columns: 20% 60% 20%; } }
   header .logo {
     padding: 5% 0 0 5%;
     width: 100%; }
   header .nombre_hotel {
-    padding-left: 5%;
-    font-size: 2em; }
+    padding: 4% 0; }
+    header .nombre_hotel h1 {
+      margin: 0;
+      padding-left: 5%;
+      font-size: 1.7em; }
+      @media (min-width: 768px) {
+        header .nombre_hotel h1 {
+          padding-left: 10%; } }
+  header .tels-dsk {
+    display: none;
+    padding: 5% 0; }
     @media (min-width: 768px) {
-      header .nombre_hotel {
-        padding-left: 10%;
-        margin: 10% 0; } }
+      header .tels-dsk {
+        display: block; } }
+    header .tels-dsk div {
+      margin: 4% 0; }
   header .menu {
     cursor: pointer;
     padding: 95% 20% 0% 20%; }
@@ -43,7 +56,7 @@ header {
       border: 2px solid rgba(194, 194, 194, 0.418);
       text-align: center;
       display: block;
-      height: 100%; } }
+      height: auto; } }
   #menu-movil a {
     padding: 1%;
     display: block;

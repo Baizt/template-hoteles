@@ -22,16 +22,32 @@ header{
     display: grid;
     padding-bottom: 1%;
     grid-template-columns: 20% 70% 10%;
+    @media (min-width:$screen_sm){
+        grid-template-columns: 20% 60% 20%;
+    }
     .logo{
         padding: 5% 0 0 5%;
         width: 100%;
     }
     .nombre_hotel{
-        padding-left: 5%;
-        font-size: 2em;
+        padding: 4% 0;
+        h1{
+            margin: 0;
+            padding-left: 5%;
+            font-size: 1.7em;
+            @media (min-width:$screen_sm){
+                padding-left: 10%;
+            }
+        }
+    }
+    .tels-dsk{
+        display: none;
+        padding: 5% 0;
         @media (min-width:$screen_sm){
-            padding-left: 10%;
-            margin: 10% 0;
+            display: block;
+        }
+        div{
+            margin: 4% 0;
         }
     }
     .menu{
@@ -60,7 +76,7 @@ header{
         border: 2px solid $color_2;
         text-align: center;
         display: block;
-        height: 100%;
+        height: auto;
     }
     a{
         padding: 1%;
