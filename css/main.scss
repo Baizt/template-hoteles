@@ -314,12 +314,9 @@ footer{
         a{
             display: inline-block;
             margin: 5%;
-            img{
-                width: 20px;
-                @media (min-width:$screen_sm){
-                    width: 30px;
-                }
-            }
+            color: #6f6f6f;
+            font-size: 1.5em;
+            text-decoration: none;
         }
     }
 }

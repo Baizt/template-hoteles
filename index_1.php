@@ -39,22 +39,22 @@
 
     $servicios = array(
         array(
-            "icono"  => "twitter.png",
+            "icono"  => "wifi",
             "nombre" => "Wi-Fi",
             "texto"  => "Gratis en todo el hotel, con buena covertura y velocidad.",
         ),
         array(
-            "icono"  => "facebook.png",
+            "icono"  => "alberca",
             "nombre" => "Alberca",
             "texto"  => "Techada con agua caliente abierta de 8am a 6pm.",
         ),
         array(
-            "icono"  => "twitter.png",
+            "icono"  => "bar",
             "nombre" => "Bar",
             "texto"  => "Dando servicio desde las 8pm hasta las 3am.",
         ),
         array(
-            "icono"  => "facebook.png",
+            "icono"  => "restaurante",
             "nombre" => "Restaurante",
             "texto"  => "Con horario desde las 7am hasta las 10pm.",
         ),
@@ -88,6 +88,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/icomoon/style.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
         <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick/slick.css"/>
@@ -106,8 +107,8 @@
                     <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
                 </div>
                 <div class="tels-dsk">
-                    <?php if($info_hotel["telefono_txt"]){ ?><div><img src="sources/telefono.png" alt="Teléfono"> <?php echo $info_hotel['telefono_txt']; ?></div><?php } ?>
-                    <?php if($info_hotel["whatsapp_txt"]){ ?><div"><img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?></div><?php } ?>
+                    <?php if($info_hotel["telefono_txt"]){ ?><div><span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?></div><?php } ?>
+                    <?php if($info_hotel["whatsapp_txt"]){ ?><div"><span class="icon-telefono-stroke"></span> <?php echo $info_hotel['whatsapp_txt']; ?></div><?php } ?>
                 </div>
                 <div id="menu-movil-btn" class="menu">
                     <span></span>
@@ -151,7 +152,7 @@
 
                     <?php foreach ($servicios as $key_serv => $servicio) { ?>
                         <div id="servicio-<?php echo $key_serv; ?>" class="servicio">
-                            <img src="sources/<?php echo $servicio["icono"]; ?>" alt="<?php echo $servicio["nombre"]; ?>">
+                            <span class="icon-<?php echo $servicio["icono"]; ?>"></span>
                             <h3 class="titulo-servicio"><?php echo $servicio["nombre"]; ?></h3 class="titulo-servicio">
                             <p class="info-servicio"><?php echo $servicio["texto"]; ?></p class="info-servicio">
                         </div>
@@ -216,15 +217,15 @@
     <!--//Footer-->
         <footer id="seccion-footer">
             <div class="redes-sociales">
-                <?php if($info_hotel["telefono"]){ ?><a href="tel:<?php echo $info_hotel["telefono"]; ?>"><img src="sources/telefono.png" alt="Teléfono"></a><?php } ?>
-                <?php if($info_hotel["whatsapp"]){ ?><a href="https://wa.me/52<?php echo $info_hotel["whatsapp"]; ?>?text=<?php echo $info_hotel["whatsapp_msj"]; ?>"><img src="sources/whatsapp.png" alt="Whatsapp"></a><?php } ?>
+                <?php if($info_hotel["telefono"]){ ?><a href="tel:<?php echo $info_hotel["telefono"]; ?>"><span class="icon-telefono"></span></a><?php } ?>
+                <?php if($info_hotel["whatsapp"]){ ?><a href="https://wa.me/52<?php echo $info_hotel["whatsapp"]; ?>?text=<?php echo $info_hotel["whatsapp_msj"]; ?>"><span class="icon-telefono-stroke"></span></a><?php } ?>
             </div>
             
             <div class="redes-sociales">
-                <?php if($info_hotel["facebook"]){ ?><a target="_blank" href="<?php echo $info_hotel["facebook"]; ?>"><img src="sources/facebook.png" alt="Facebook"></a><?php } ?>
-                <?php if($info_hotel["instagram"]){ ?><a target="_blank" href="<?php echo $info_hotel["instagram"]; ?>"><img src="sources/instagram.png" alt="Instagram"></a><?php } ?>
-                <?php if($info_hotel["twitter"]){ ?><a target="_blank" href="<?php echo $info_hotel["twitter"]; ?>"><img src="sources/twitter.png" alt="Twitter"></a><?php } ?>
-                <?php if($info_hotel["youtube"]){ ?><a target="_blank" href="<?php echo $info_hotel["youtube"]; ?>"><img src="sources/youtube.png" alt="Youtube"></a><?php } ?>
+                <?php if($info_hotel["facebook"]){ ?><a target="_blank" href="<?php echo $info_hotel["facebook"]; ?>"><span class="icon-facebook"></span></a><?php } ?>
+                <?php if($info_hotel["instagram"]){ ?><a target="_blank" href="<?php echo $info_hotel["instagram"]; ?>"><span class="icon-instagram"></span></a><?php } ?>
+                <?php if($info_hotel["twitter"]){ ?><a target="_blank" href="<?php echo $info_hotel["twitter"]; ?>"><span class="icon-twitter"></span></a><?php } ?>
+                <?php if($info_hotel["youtube"]){ ?><a target="_blank" href="<?php echo $info_hotel["youtube"]; ?>"><span class="icon-youtube"></span></a><?php } ?>
             </div>
         </footer>
     <!--//Footer-->

@@ -231,11 +231,9 @@ footer {
     text-align: center; }
     footer .redes-sociales a {
       display: inline-block;
-      margin: 5%; }
-      footer .redes-sociales a img {
-        width: 20px; }
-        @media (min-width: 768px) {
-          footer .redes-sociales a img {
-            width: 30px; } }
+      margin: 5%;
+      color: #6f6f6f;
+      font-size: 1.5em;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
