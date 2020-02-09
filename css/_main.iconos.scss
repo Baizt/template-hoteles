@@ -1,0 +1,70 @@
+$servicios: (
+    ("alberca","pool"),
+    ("centrodenegocios","bussinesscenter"),
+    ("cocineta","kitchenette"),
+    ("estacionamiento","parking"),
+    ("internet","internet"),
+    ("restaurante","restaurant"),
+    ("actividadesdealberca","poolactivities"),
+    ("actividadesdeplaya","seasideactivities"),
+    ("agenciadeviajes","travelagency"),
+    ("aireacondicionado","airconditioning"),
+    ("albercaclimatizada","heatedpool"),
+    ("albercatechada","indoorpool"),
+    ("areasverdes","greenareas"),
+    ("asadores","grills"),
+    ("bar","bar"),
+    ("barenalberca","poolbar"),
+    ("biblioteca","library"),
+    ("caballos","horses"),
+    ("cafeteria","coffeeshop"),
+    ("cajeroautomatico","atm"),
+    ("canchadeportiva","sportsfield"),
+    ("chapoteadero","wading"),
+    ("clubdeplaya","beachclub"),
+    ("cocinacompartida","sharedkitchen"),
+    ("concierge","concierge"),
+    ("espectaculos","shows"),
+    ("estetica","beautyshop"),
+    ("gimnasio","gym"),
+    ("hidromasaje","hydromassage"),
+    ("jacuzzi","jacuzzi"),
+    ("jardin","garden"),
+    ("juegosinfantiles","playground"),
+    ("lavanderia","laundry"),
+    ("masajes","massages"),
+    ("mini-super","mini-super"),
+    ("niñera","babysitter"),
+    ("playa","beach"),
+    ("rentadeautos","carrental"),
+    ("rentadeequipodeportivo","rentalofsportsequipment"),
+    ("saladejuntas","meetingroom"),
+    ("saladelectura","readinglounge"),
+    ("saladetv","tvlounge"),
+    ("tv", "tv"),
+    ("salondejuegos","playroom"),
+    ("salonesdeeventos","functionrooms"),
+    ("seguridad","security"),
+    ("servicioalahabitacion","roomservice"),
+    ("serviciomedico","medicalservice"),
+    ("spa","spa"),
+    ("temazcal","temazcal"),
+    ("tiendaboutique","boutiqueshop"),
+    ("tours","tours"),
+    ("transportegratuito","freeofchargetransportation"),
+    ("zonadeacampar","campingarea")
+);
+
+$i:-32;
+@each $item in $servicios {
+
+    .icon-servicio-#{nth($item, 1)}, .icon-servicio-#{nth($item, 2)}{
+        background:url('../sources/iconos-servicios-hotel.png') no-repeat 0px #{$i}px !important;
+        display:inline-block;
+        width:32px;
+        height:32px;
+        vertical-align: top;
+    }
+
+    $i:$i - 32;
+}

@@ -11,10 +11,28 @@
         'whatsapp_txt'      =>  '55 43 46 17 90',
         'whatsapp_msj'      =>  str_replace("/\s+/", "","Hola me gustaría obtener informes sobre sus habitaciones"),
         'correo'            =>  'albaizt@gmail.com',
-        'facebook'          =>  'https://www.fb.com',
-        'instagram'         =>  'https://www.instagram.com',
-        'twitter'           =>  'https://www.twitter.com',
-        'youtube'           =>  'https://www.youtube.com',
+        'redes_sociales'    =>  [
+                                'facebook' => [
+                                        "icono" => "facebook",
+                                        "nombre"=> "Facebook",
+                                        "url"   =>'https://www.facebook.com',
+                                ],
+                                'instagram'=> [
+                                        "icono" => "instagram",
+                                        "nombre"=> "Instagram",
+                                        "url"   => 'https://www.instagram.com',
+                                ],
+                                'twitter'  => [
+                                        "icono" => "twitter",
+                                        "nombre"=> "Twitter",
+                                        "url"   => 'https://www.twitter.com',
+                                ],
+                                'youtube'  => [
+                                        "icono" => "youtube",
+                                        "nombre"=> "Youtube",
+                                        "url"   =>'https://www.youtube.com',
+                                ],
+                            ]
     );
 
     $galeria = array(
@@ -39,7 +57,7 @@
 
     $servicios = array(
         array(
-            "icono"  => "wifi",
+            "icono"  => "internet",
             "nombre" => "Wi-Fi",
             "texto"  => "Gratis en todo el hotel, con buena covertura y velocidad.",
         ),
@@ -107,8 +125,17 @@
                     <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
                 </div>
                 <div class="tels-dsk">
-                    <?php if($info_hotel["telefono_txt"]){ ?><div><span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?></div><?php } ?>
-                    <?php if($info_hotel["whatsapp_txt"]){ ?><div"><span class="icon-telefono-stroke"></span> <?php echo $info_hotel['whatsapp_txt']; ?></div><?php } ?>
+                    <?php if($info_hotel["telefono_txt"]){ ?>
+                        <div>
+                            <span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?>
+                        </div>
+                    <?php }
+
+                    if($info_hotel["whatsapp_txt"]){ ?>
+                        <div>
+                            <img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?>
+                        </div>
+                    <?php } ?>
                 </div>
                 <div id="menu-movil-btn" class="menu">
                     <span></span>
@@ -152,7 +179,7 @@
 
                     <?php foreach ($servicios as $key_serv => $servicio) { ?>
                         <div id="servicio-<?php echo $key_serv; ?>" class="servicio">
-                            <span class="icon-<?php echo $servicio["icono"]; ?>"></span>
+                            <span class="icon-servicio-<?php echo $servicio["icono"]; ?>"></span>
                             <h3 class="titulo-servicio"><?php echo $servicio["nombre"]; ?></h3 class="titulo-servicio">
                             <p class="info-servicio"><?php echo $servicio["texto"]; ?></p class="info-servicio">
                         </div>
@@ -217,15 +244,31 @@
     <!--//Footer-->
         <footer id="seccion-footer">
             <div class="redes-sociales">
-                <?php if($info_hotel["telefono"]){ ?><a href="tel:<?php echo $info_hotel["telefono"]; ?>"><span class="icon-telefono"></span></a><?php } ?>
-                <?php if($info_hotel["whatsapp"]){ ?><a href="https://wa.me/52<?php echo $info_hotel["whatsapp"]; ?>?text=<?php echo $info_hotel["whatsapp_msj"]; ?>"><span class="icon-telefono-stroke"></span></a><?php } ?>
+
+                <?php if($info_hotel["telefono"]){ ?>
+                    <a href="tel:<?php echo $info_hotel["telefono"]; ?>" title="Teléfono">
+                        <span class="icon-telefono"></span>
+                    </a>
+                <?php }
+
+                if($info_hotel["whatsapp"]){ ?>
+                    <a href="https://wa.me/52<?php echo $info_hotel["whatsapp"]; ?>?text=<?php echo $info_hotel["whatsapp_msj"]; ?>" title="Whatsapp">
+                        <img src="sources/whatsapp.png" alt="Whatsapp" width="23px">
+                    </a>
+                <?php } ?>
+
             </div>
             
             <div class="redes-sociales">
-                <?php if($info_hotel["facebook"]){ ?><a target="_blank" href="<?php echo $info_hotel["facebook"]; ?>"><span class="icon-facebook"></span></a><?php } ?>
-                <?php if($info_hotel["instagram"]){ ?><a target="_blank" href="<?php echo $info_hotel["instagram"]; ?>"><span class="icon-instagram"></span></a><?php } ?>
-                <?php if($info_hotel["twitter"]){ ?><a target="_blank" href="<?php echo $info_hotel["twitter"]; ?>"><span class="icon-twitter"></span></a><?php } ?>
-                <?php if($info_hotel["youtube"]){ ?><a target="_blank" href="<?php echo $info_hotel["youtube"]; ?>"><span class="icon-youtube"></span></a><?php } ?>
+
+                <?php foreach ($info_hotel["redes_sociales"] as $red_social) {
+                    if($red_social){ ?>
+                        <a target="_blank" href="<?php echo $red_social["url"]; ?>" alt="<?php echo $red_social["nombre"]; ?>" title="<?php echo $red_social["nombre"]; ?>">
+                            <span class="icon-<?php echo $red_social["icono"]; ?>"></span>
+                        </a>
+                    <?php }
+                } ?>
+                
             </div>
         </footer>
     <!--//Footer-->
