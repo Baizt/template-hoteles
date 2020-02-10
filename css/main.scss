@@ -131,6 +131,9 @@ header{
         top: 35%;
         left: 15%;
         text-align: center;
+        @media (min-width:$screen_sm){
+            left: 40%;
+        }
         span{
             color: #fff;
             display: block;
@@ -322,8 +325,12 @@ header{
     cursor: pointer;
     display: none;
     padding: 2%;
-    bottom: 4%;
+    bottom: 8%;
     right: 3%;
+    @media (min-width:$screen_sm){
+        padding: 1%;
+        bottom: 24%;
+    }
     .arrow-container{
         position: relative;
         height: 22px;
