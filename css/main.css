@@ -472,11 +472,26 @@ header {
         border: none;
         padding: 2% 4%;
         display: inline-block; } }
-    #menu-movil a:hover {
-      background-color: #fff; }
+    @media (min-width: 768px) {
+      #menu-movil a:hover {
+        background-color: #fff; } }
 
 #seccion-galeria {
-  margin-top: 3%; }
+  margin-top: 3%;
+  position: relative; }
+  #seccion-galeria .frase-home {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 15%;
+    text-align: center; }
+    #seccion-galeria .frase-home span {
+      color: #fff;
+      display: block;
+      font-size: 2em;
+      text-shadow: 2px 2px 20px #000;
+      font-weight: bold;
+      font-family: sans-serif; }
   #seccion-galeria .galeria-container img {
     height: 310px; }
     @media (min-width: 768px) {
@@ -516,21 +531,19 @@ header {
     display: grid;
     margin: 0 3% 5% 3%;
     text-align: center;
-    justify-items: stretch;
-    grid-template-columns: 50% 50%;
+    justify-items: center;
+    grid-template-columns: 48% 48%;
     grid-template-rows: auto;
-    grid-column-gap: 4%;
-    grid-row-gap: 4%; }
+    grid-column-gap: 4%; }
     @media (min-width: 768px) {
       #seccion-servicios .row-servicio {
-        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-columns: 22% 22% 22% 22%;
         grid-template-rows: auto;
-        grid-column-gap: 5%;
-        grid-row-gap: 4%; } }
+        grid-column-gap: 4%; } }
     #seccion-servicios .row-servicio .servicio .titulo-servicio {
       margin: 1% 0; }
     #seccion-servicios .row-servicio .servicio .info-servicio {
-      margin: 0; }
+      margin: 0 0 8% 0; }
 
 @media (min-width: 768px) {
   #seccion-habs .row-habs {
@@ -581,20 +594,58 @@ header {
   #seccion-contacto form .grupo {
     margin-bottom: 5%;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
     grid-row-gap: 4%; }
   #seccion-contacto form .grupo-2 {
     display: grid;
-    margin-top: 8%;
+    margin-top: 12%;
     grid-template-columns: 80% 20%;
     grid-row-gap: 4%; }
+    @media (min-width: 768px) {
+      #seccion-contacto form .grupo-2 {
+        margin-top: 8%; } }
   #seccion-contacto form button {
     margin: 3% 0;
     float: right; }
   #seccion-contacto form #campos-rojos, #seccion-contacto form #envio_fallido {
+    padding-right: 5%;
     color: red;
     display: none; }
+  #seccion-contacto form #envio_hecho {
+    padding-right: 5%;
+    color: green;
+    display: none; }
 
+#to_top {
+  background: #c2c2c2;
+  border-radius: 30%;
+  position: fixed;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  padding: 2%;
+  bottom: 4%;
+  right: 3%; }
+  #to_top .arrow-container {
+    position: relative;
+    height: 22px;
+    width: 19px; }
+    #to_top .arrow-container span {
+      position: absolute;
+      bottom: -2px;
+      font-size: 1.2em;
+      font-weight: bold;
+      animation-name: jump;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; }
+
+@keyframes jump {
+  0% {
+    bottom: -2px; }
+  50% {
+    bottom: 3px; }
+  100% {
+    bottom: -2px; } }
 footer {
   width: 100%;
   display: grid;
@@ -602,18 +653,31 @@ footer {
   margin-top: 15%;
   background-color: rgba(194, 194, 194, 0.418);
   justify-items: center;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 33% 67%; }
   @media (min-width: 768px) {
     footer {
+      grid-template-columns: 50% 50%;
       margin-top: 10%; } }
+  footer a {
+    display: inline-block;
+    margin: 5%;
+    color: #6f6f6f;
+    font-size: 1.5em;
+    text-decoration: none; }
+  footer .contacto {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%; }
+    @media (min-width: 768px) {
+      footer .contacto {
+        grid-template-columns: 33% 33% 33%; } }
   footer .redes-sociales {
     width: 100%;
-    text-align: center; }
-    footer .redes-sociales a {
-      display: inline-block;
-      margin: 5%;
-      color: #6f6f6f;
-      font-size: 1.5em;
-      text-decoration: none; }
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%; }
 
 /*# sourceMappingURL=main.css.map */

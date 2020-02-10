@@ -57,14 +57,24 @@
 
     $servicios = array(
         array(
+            "icono"  => "aireacondicionado",
+            "nombre" => "Aire Acondicionado",
+            "texto"  => "Gratis en todo el hotel, con buena covertura y velocidad.",
+        ),
+		array(
+			"icono"  => "alberca",
+			"nombre" => "Alberca",
+			"texto"  => "Techada con agua caliente abierta de 8am a 6pm.",
+		),
+		array(
+			"icono"  => "estacionamiento",
+			"nombre" => "Estacionamiento",
+			"texto"  => "Techada con agua caliente abierta de 8am a 6pm.",
+		),
+        array(
             "icono"  => "internet",
             "nombre" => "Wi-Fi",
             "texto"  => "Gratis en todo el hotel, con buena covertura y velocidad.",
-        ),
-        array(
-            "icono"  => "alberca",
-            "nombre" => "Alberca",
-            "texto"  => "Techada con agua caliente abierta de 8am a 6pm.",
         ),
         array(
             "icono"  => "bar",
@@ -72,8 +82,28 @@
             "texto"  => "Dando servicio desde las 8pm hasta las 3am.",
         ),
         array(
+            "icono"  => "cafeteria",
+            "nombre" => "Cafeteria",
+            "texto"  => "Con horario desde las 7am hasta las 10pm.",
+        ),
+        array(
+            "icono"  => "jardin",
+            "nombre" => "Jardín",
+            "texto"  => "Con horario desde las 7am hasta las 10pm.",
+        ),
+        array(
             "icono"  => "restaurante",
             "nombre" => "Restaurante",
+            "texto"  => "Con horario desde las 7am hasta las 10pm.",
+        ),
+        array(
+            "icono"  => "tv",
+            "nombre" => "T.V.",
+            "texto"  => "Con horario desde las 7am hasta las 10pm.",
+        ),
+        array(
+            "icono"  => "tours",
+            "nombre" => "Tours",
             "texto"  => "Con horario desde las 7am hasta las 10pm.",
         ),
     );
@@ -105,13 +135,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+		<link rel="icon" href="sources/favico.png" type="image/gif" sizes="16x16">
+
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/icomoon/style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
         <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick/slick-theme.css"/>
-        <script type="text/javascript" src="vendor/slick-1.8.1/slick/slick.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick/slick-theme.css"/>
+		
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
+		<script type="text/javascript" src="vendor/slick-1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript">var motor_widget=(function(){ var jswb=document.createElement("script"); jswb.type="text/javascript"; jswb.async=true; jswb.id='mtr_wdg_script'; jswb.dataset.btn_mvl_btm="150px"; jswb.dataset.btn_dsk_top="140px"; jswb.dataset.fnt_color="#fff"; jswb.dataset.color_btn="#009688"; jswb.dataset.nom='galeria'; jswb.dataset.logo=''; jswb.dataset.lang='es'; jswb.dataset.id_hotel=26579; jswb.src="https://www.zonaturistica.com/js/hoteles/widgetButton.js"; document.getElementsByTagName("head")[0].appendChild(jswb); var fnr=function(fn){ var mr=motor_widget; if(mr.readyList){ mr.ready(fn); } else { mr.rl=mr.rl || []; mr.rl.push(fn); } }; fnr.ready=fnr; return fnr; })();</script>
 
         <title><?php echo $info_hotel['nombre']." de ".$info_hotel['ciudad'].", ".$info_hotel['estado']; ?></title>
     </head>
@@ -147,17 +181,22 @@
 
         <!-- Menú Móvil -->
             <div id="menu-movil">
-                <a href="#seccion-galeria">Galeria</a>
-                <a href="#seccion-video">Video</a>
-                <a href="#seccion-servicios">Servicios</a>
-                <a href="#seccion-habs">Habitaciones</a>
-                <a href="#seccion-contacto">Ubicación</a>
-                <a href="#seccion-contacto">Contacto</a>
+                <a href="#seccion-galeria" class="opcion-menu" data-seccion="galeria" id="galeria-link">Galeria</a>
+                <a href="#seccion-video" class="opcion-menu" data-seccion="video" id="video-link">Video</a>
+                <a href="#seccion-servicios" class="opcion-menu" data-seccion="servicios" id="servicios-link">Servicios</a>
+                <a href="#seccion-habs" class="opcion-menu" data-seccion="habs" id="habs-link">Habitaciones</a>
+                <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="ubicacion-link">Ubicación</a>
+				<a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="contacto-link">Contacto</a>
             </div>
         <!-- //Menú Móvil -->
         
         <!--Slider-->
             <div id="seccion-galeria" class="seccion">
+				<div class="frase-home">
+					<span>
+						!Ven y conócenos!
+					</span>
+				</div>
                 <div class="galeria-container">
                     <?php foreach ($galeria as $key_gal => $img_gal) { ?>
                         <div><img id="img-gal-<?php echo $key_gal; ?>" src="sources/<?php echo $img_gal["imagen"]; ?>" alt="<?php echo $img_gal["nombre"]; ?>"></div>
@@ -222,28 +261,40 @@
                 <form>
                     <div class="grupo">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre">
+						<input type="text" name="nombre" id="nombre">
+						
                         <label for="telefono">Teléfono</label>
-                        <input type="text" name="telefono" id="telefono">
+						<input type="number" name="telefono" id="telefono">
+						
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email">
+						<input type="email" name="email" id="email">
+						
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                     </div>
                     <div class="grupo-2">
                         <div id="espacio"></div>
-                        <div id="campos-rojos">* Favor de validar los campos en rojo.</div>
+                        <div id="campos-rojos">* Favor de validar los campos en color rojo.</div>
                         <div id="envio_fallido">Hubo un problema con el envío por favor intente más tarde.</div>
+                        <div id="envio_hecho">Hemos recibido su mensaje, en breve nos pondremos en contacto con usted.</div>
                         <button id="enviar_contacto">Enviar</button>
                     </div>
                 </form>
             </div>
         </div>
-    <!--//Contacto-->
+	<!--//Contacto-->
+	
+	<!--Botón Arriba-->
+		<div id="to_top">
+			<div class="arrow-container">
+				<span class="icon-ver-arriba"></span>
+			</div>
+		</div>
+	<!--//Botón Arriba-->
 
     <!--//Footer-->
         <footer id="seccion-footer">
-            <div class="redes-sociales">
+            <div class="contacto">
 
                 <?php if($info_hotel["telefono"]){ ?>
                     <a href="tel:<?php echo $info_hotel["telefono"]; ?>" title="Teléfono">
@@ -343,6 +394,18 @@
             });
             //-Menú Móvil
 
+			//Opciones Menú
+				$(".opcion-menu").click(function(e){
+					e.preventDefault();
+					let id = this.id;
+					let seccion = $("#"+id).data("seccion");
+					let altura = $("#seccion-"+seccion).offset().top;
+					$("html, body").animate({
+						scrollTop: altura
+					}, 600);
+				});
+			//-Opciones Menú
+
             //Info de las Habs
                 $(".sombra").click(function(){
                     $('#'+this.parentNode.id).children(".sombra").fadeOut("slow");
@@ -387,16 +450,39 @@
                         $("#mensaje").addClass("campo-vacio");
                         enviar = false;
                     }
+
+                    let datos = {
+                        'nombre':	$("#nombre").val(),
+                        'email':	$("#email").val(),
+                        'telefono':	$("#telefono").val(),
+                        'mensaje':	$("#mensaje").val(),
+                    };
+
                     if(enviar){
                         $.ajax({
                             url: "dev/contacto.php",
+                            data:datos,
                         }).done(function() {
                             $("#nombre").val("");
                             $("#email").val("");
                             $("#telefono").val("");
                             $("#mensaje").val("");
+
+                        	$("#espacio").hide();
+                        	$("#campos-rojos").hide();
+                            $("#envio_fallido").hide();
+                            $("#envio_hecho").show();
+
+							setTimeout(() => {
+                            	$("#envio_hecho").fadeOut('slow', function(){
+									$("#espacio").show();
+								});
+							}, 4000);
                         })
                         .fail(function() {
+                       		$("#espacio").hide();
+                        	$("#campos-rojos").hide();
+                            $("#envio_hecho").hide();
                             $("#envio_fallido").show();
                         })
                         .always(function() {
@@ -409,6 +495,22 @@
                 });
             //-Formulario de Contacto
 
+			//Botón Arriba
+				$("#to_top").click(function(e){
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+				});
+
+				$(window).scroll(function(){
+					let scroll = document.documentElement.scrollTop;
+					if(scroll > 450 && scroll < 2700){
+						$("#to_top").fadeIn();
+					} else {
+						$("#to_top").fadeOut();
+					}
+				});
+			//-Botón Arriba
         });
     </script>
 </html>

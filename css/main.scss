@@ -113,7 +113,9 @@ header{
             display: inline-block;
         }
         &:hover{
-            background-color: $color_3;
+            @media (min-width:$screen_sm){
+                background-color: $color_3;
+            }
         }
     }
 }
@@ -122,6 +124,22 @@ header{
 //Galeria
 #seccion-galeria{
     margin-top: 3%;
+    position: relative;
+    .frase-home{
+        position: absolute;
+        z-index: 1;
+        top: 35%;
+        left: 15%;
+        text-align: center;
+        span{
+            color: #fff;
+            display: block;
+            font-size: 2em;
+            text-shadow: 2px 2px 20px #000;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    }
     .galeria-container{
         img{
             height: 310px;
@@ -178,23 +196,21 @@ header{
         display: grid;
         margin: 0 3% 5% 3%;
         text-align: center;
-        justify-items: stretch;
-        grid-template-columns: 50% 50%;
+        justify-items: center;
+        grid-template-columns: 48% 48%;
         grid-template-rows: auto;
         grid-column-gap: 4%;
-        grid-row-gap: 4%;
         @media (min-width:$screen_sm){
-            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-columns: 22% 22% 22% 22%;
             grid-template-rows: auto;
-            grid-column-gap: 5%;
-            grid-row-gap: 4%;
+            grid-column-gap: 4%;
         }
         .servicio{
             .titulo-servicio{
                 margin: 1% 0;
             }
             .info-servicio{
-                margin: 0;
+                margin: 0 0 8% 0;
             }
         }
     }
@@ -264,29 +280,72 @@ header{
         .grupo{
             margin-bottom: 5%;
             display: grid;
-            grid-template-columns: 20% 80%;
+            grid-template-columns: 25% 75%;
             grid-row-gap: 4%;
         }
         .grupo-2{
             display: grid;
-            margin-top: 8%;
+            margin-top: 12%;
             grid-template-columns: 80% 20%;
             grid-row-gap: 4%;
+            @media (min-width:$screen_sm){
+                margin-top: 8%;
+            }
         }
         button{
             margin: 3% 0;
             float: right;
         }
         #campos-rojos{
+            padding-right: 5%;
             color: red;
             display: none;
         }
         #envio_fallido{
             @extend #campos-rojos;
         }
+        #envio_hecho{
+            padding-right: 5%;
+            color: green;
+            display: none;
+        }
     }
 }
 //-Contacto
+
+//Botón Arriba
+#to_top{
+    background: $color_5;
+    border-radius: 30%;
+    position: fixed;
+    color: $color_3;
+    cursor: pointer;
+    display: none;
+    padding: 2%;
+    bottom: 4%;
+    right: 3%;
+    .arrow-container{
+        position: relative;
+        height: 22px;
+        width: 19px;
+        span{
+            position: absolute;
+            bottom: -2px;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation-name: jump;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes jump {
+    0% {bottom: -2px;}
+    50% {bottom: 3px;}
+    100% {bottom: -2px;}
+  }
+//--Botón Arriba
 
 //Footer
 footer{
@@ -296,19 +355,33 @@ footer{
     margin-top: 15%;
     background-color: $color_2;
     justify-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 67%;
     @media (min-width:$screen_sm){
+        grid-template-columns: 50% 50%;
         margin-top: 10%;
+    }
+    a{
+        display: inline-block;
+        margin: 5%;
+        color: #6f6f6f;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    .contacto{
+        width: 100%;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 50% 50%;
+        @media (min-width:$screen_sm){
+            grid-template-columns: 33% 33% 33%;
+        }
     }
     .redes-sociales{
         width: 100%;
         text-align: center;
-        a{
-            display: inline-block;
-            margin: 5%;
-            color: #6f6f6f;
-            font-size: 1.5em;
-            text-decoration: none;
-        }
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 25% 25% 25% 25%;
     }
 }
