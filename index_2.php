@@ -110,17 +110,26 @@
 
     $habitaciones  = array(
         array(
-            "imagen"        => "room1.jpg",
+            "imagenes"      => [
+                "room1.jpg",
+                "room2.jpg",
+            ],
             "nombre"        => "Pet Friendly - Vista al jardín",
             "descripcion"   => "Una habitacion con una cama individual, cuenta con un baño sencillo, con capacidad para el huesped y una persona extra.",
         ),
         array(
-            "imagen"        => "room1.jpg",
+            "imagenes"      => [
+                "room2.jpg",
+                "room1.jpg",
+            ],
             "nombre"        => "Estandar con balcon privado",
             "descripcion"   => "Ideal para parejas, cuenta con una cama doble, un baño con tina y una terraza para pasar un momento agradable.",
         ),
         array(
-            "imagen"        => "room1.jpg",
+            "imagenes"      => [
+                "room1.jpg",
+                "room2.jpg",
+            ],
             "nombre"        => "Triple - Frente al Mar",
             "descripcion"   => "Cuenta con dos camas dobles con capacidad hasta para 5 personas: 3 huespedes y 2 personas extras, tiene un baño y una terraza",
         ),
@@ -197,7 +206,7 @@
 						!Ven y conócenos!
 					</span>
 				</div>
-                <div class="galeria-container">
+                <div class="galeria-container galeria">
                     <?php foreach ($galeria as $key_gal => $img_gal) { ?>
                         <div><img id="img-gal-<?php echo $key_gal; ?>" src="sources/<?php echo $img_gal["imagen"]; ?>" alt="<?php echo $img_gal["nombre"]; ?>"></div>
                     <?php } ?>
@@ -207,7 +216,8 @@
 
         <!--Descripción-->
             <div id="seccion-descripcion" class="seccion">
-                <p>Descripción</p>
+                <p>El hotel es un edificio pequeño y colonial. Disfruta de la limpieza, amabilidad y comodidad. Atención personalizada.</p>
+                <p>Contamos con 2 salas de juntas con capacidad máxima para 30 personas y con 1 salón para eventos con capacidad máxima para 70 personas.</p>
             </div>
         <!--//Descripción-->
 
@@ -218,9 +228,11 @@
 
                     <?php foreach ($servicios as $key_serv => $servicio) { ?>
                         <div id="servicio-<?php echo $key_serv; ?>" class="servicio">
-                            <span class="icon-servicio-<?php echo $servicio["icono"]; ?>"></span>
                             <h3 class="titulo-servicio"><?php echo $servicio["nombre"]; ?></h3 class="titulo-servicio">
-                            <p class="info-servicio"><?php echo $servicio["texto"]; ?></p class="info-servicio">
+                            <div class="servicio-container">
+                                <span class="icon-servicio-<?php echo $servicio["icono"]; ?>"></span>
+                                <p class="info-servicio"><?php echo $servicio["texto"]; ?></p class="info-servicio">
+                            </div>
                         </div>
                     <?php } ?>
 
@@ -235,12 +247,14 @@
 
                     <?php foreach ($habitaciones as $key_hab => $habitacion) { ?>
                         <div id="hab-<?php echo $key_hab; ?>" class="hab">
-                            <img src="sources/<?php echo $habitacion["imagen"]; ?>" alt="<?php echo $habitacion["nombre"]; ?>">
-                            <div class="sombra">
-                                <div class="descripcion">
-                                    <h3><?php echo $habitacion["nombre"]; ?></h3>
-                                    <?php echo $habitacion["descripcion"]; ?>
-                                </div>
+                            <div class="galeria-hab galeria">
+                                <?php foreach ($habitacion["imagenes"] as $imagen) { ?>
+                                    <div><img src="sources/<?php echo $imagen; ?>" alt="<?php echo $habitacion["nombre"]; ?>"></div>
+                                <?php } ?>
+                            </div>
+                            <div class="descripcion">
+                                <h3><?php echo $habitacion["nombre"]; ?></h3>
+                                <?php echo $habitacion["descripcion"]; ?>
                             </div>
                         </div>
                     <?php } ?>
@@ -407,13 +421,15 @@
 			//-Opciones Menú
 
             //Info de las Habs
-                $(".sombra").click(function(){
-                    $('#'+this.parentNode.id).children(".sombra").fadeOut("slow");
-                    return false;
-                });
-                $(".sombra").mouseleave(function(){
-                    $('#'+this.parentNode.id).children(".sombra").fadeOut("slow");
-                    return false;
+               $('.galeria-hab').slick({
+                    arrows:true,
+                    autoplay:true,
+                    infinite:true,
+                    centerMode:true,
+                    mobileFirst:true,
+                    pauseOnFocus:true,
+                    variableWidth:true,
+                    //adaptiveHeight:true,
                 });
                 $(".hab").click(function(){
                     $('#'+this.id).children(".sombra").fadeIn("slow");
