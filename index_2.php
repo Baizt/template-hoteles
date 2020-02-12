@@ -137,7 +137,7 @@
 
 		<link rel="icon" href="sources/favico.png" type="image/gif" sizes="16x16">
 
-        <link rel="stylesheet" href="css/main_1.css">
+        <link rel="stylesheet" href="css/main_2.css">
         <link rel="stylesheet" href="css/icomoon/style.css">
         <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick/slick-theme.css"/>
@@ -205,11 +205,11 @@
             </div>
         <!--//Slider-->
 
-        <!--Video-->
-            <div id="seccion-video" class="seccion">
-                <iframe width="100%" height="auto" alt="<?php echo $video['nombre']; ?>" src="<?php echo $video['url']; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--Descripción-->
+            <div id="seccion-descripcion" class="seccion">
+                <p>Descripción</p>
             </div>
-        <!--//Video-->
+        <!--//Descripción-->
 
         <!--Servicios-->
             <div id="seccion-servicios" class="seccion">
