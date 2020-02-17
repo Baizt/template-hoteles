@@ -228,10 +228,10 @@
 
                     <?php foreach ($servicios as $key_serv => $servicio) { ?>
                         <div id="servicio-<?php echo $key_serv; ?>" class="servicio">
-                            <h3 class="titulo-servicio"><?php echo $servicio["nombre"]; ?></h3 class="titulo-servicio">
+                            <span class="icon-servicio-<?php echo $servicio["icono"]; ?>"></span>
                             <div class="servicio-container">
-                                <span class="icon-servicio-<?php echo $servicio["icono"]; ?>"></span>
-                                <p class="info-servicio"><?php echo $servicio["texto"]; ?></p class="info-servicio">
+                                <h3 class="titulo-servicio"><?php echo $servicio["nombre"]; ?>:</h3>
+                                <span class="info-servicio"><?php echo $servicio["texto"]; ?></span>
                             </div>
                         </div>
                     <?php } ?>

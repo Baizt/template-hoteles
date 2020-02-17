@@ -10,7 +10,7 @@
         <h1>Selecciona un Demo para Visualizarlo</h1>
 
         <div class="opciones_container">
-            <a href="index_1.php" target="_blank" rel="next" id="opcion_1" class="opcion">
+            <a href="index_1.html" target="_blank" rel="next" id="opcion_1" class="opcion">
                 <h2>Opción 1</h2>
                 <div class="image-container">
                     <img src="sources/template_1.jpeg" alt="Primer template">
@@ -18,7 +18,7 @@
                 <div class="ver_demo"> Ver Demo >></div>
             </a>
 
-            <a href="index_2.php" target="_blank" rel="next" id="opcion_2" class="opcion">
+            <a href="index_2.html" target="_blank" rel="next" id="opcion_2" class="opcion">
                 <h2>Opción 2</h2>
                 <div class="image-container">
                     <img src="sources/template_1.jpeg" alt="Segundo template">
