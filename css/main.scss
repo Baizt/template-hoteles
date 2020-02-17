@@ -1,0 +1,56 @@
+@import "_main.common";
+@import "_main.iconos";
+
+body{
+    font-family: sans-serif;
+    h1{
+        text-align: center;
+        @media (max-width:$screen_sm){
+            font-size: 1.3em;
+        }
+    }
+    h2{
+        @media (max-width:$screen_sm){
+            font-size: 1em;
+        }
+    }
+    .opciones_container{
+        width: 100%;
+        @media (min-width:$screen_sm){
+            width: 99%;
+            display: grid;
+            grid-column-gap: 5%;
+            grid-template-columns: 30% 30% 30%;
+        }
+        .opcion{
+            color: #000;
+            margin: 6% 2%;
+            display: block;
+            padding-bottom: 6%;
+            text-align: center;
+            text-decoration: none;
+            border: 1px #000 solid;
+            @media (min-width:$screen_sm){
+                margin: 0;
+            }
+            &:hover{
+                background-color: #007eff2e;
+            }
+            .image-container{
+                overflow: hidden;
+                max-height: 300px;
+                -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+                @media (min-width:$screen_sm){
+                    max-height: 555px;
+                }
+                img{
+                    width: 60%;
+                }
+            }
+            .ver_demo{
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
