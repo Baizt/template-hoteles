@@ -149,87 +149,87 @@
         <title><?php echo $info_hotel['nombre']." de ".$info_hotel['ciudad'].", ".$info_hotel['estado']; ?></title>
     </head>
     <body>
-            <!--Header-->
-                <header>
-                    <div>
-                        <img class="logo" src="sources/<?php echo $info_hotel['logo']; ?>" alt="Logo">
-                    </div>
-                    <div class="nombre_hotel">
-                        <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
-                    </div>
-                    <div class="tels-dsk">
-                        <?php if($info_hotel["telefono_txt"]){ ?>
-                            <div>
-                                <span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?>
-                            </div>
-                        <?php }
-
-                        if($info_hotel["whatsapp_txt"]){ ?>
-                            <div>
-                                <img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </header>
-            <!--//Header-->
-
-            <!-- Menú Móvil -->
-                <div id="menu-movil">
-                    <a href="#seccion-galeria" class="opcion-menu" data-seccion="galeria" id="galeria-link">
-                        <div class="container">
-                            <div class="text">
-                                Galeria
-                            </div>
-                            <hr>
-                        </div>
-                    </a>
-
-                    <a href="#seccion-video" class="opcion-menu" data-seccion="video" id="video-link">
-                        <div class="container">
-                            <div class="text">
-                                Video
-                            </div>
-                            <hr>
-                        </div>
-                    </a>
-
-                    <a href="#seccion-servicios" class="opcion-menu" data-seccion="servicios" id="servicios-link">
-                        <div class="container">
-                            <div class="text">
-                                Servicios
-                            </div>
-                            <hr>
-                        </div>
-                    </a>
-
-                    <a href="#seccion-habs" class="opcion-menu" data-seccion="habs" id="habs-link">
-                        <div class="container">
-                            <div class="text">
-                                Habitaciones
-                            </div>
-                            <hr>
-                        </div>
-                    </a>
-
-                    <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="ubicacion-link">
-                        <div class="container">
-                            <div class="text">
-                                Ubicación
-                            </div>
-                            <hr>
-                        </div>
-                    </a>
-
-                    <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="contacto-link">
-                        <div class="container">
-                            <div class="text">
-                                Contacto
-                            </div>
-                            <hr>
-                        </div>
-                    </a>
+        <!--Header-->
+            <header>
+                <div>
+                    <img class="logo" src="sources/<?php echo $info_hotel['logo']; ?>" alt="Logo">
                 </div>
-            <!-- //Menú Móvil -->
+                <div class="nombre_hotel">
+                    <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
+                </div>
+                <div class="tels-dsk">
+                    <?php if($info_hotel["telefono_txt"]){ ?>
+                        <div>
+                            <span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?>
+                        </div>
+                    <?php }
+
+                    if($info_hotel["whatsapp_txt"]){ ?>
+                        <div>
+                            <img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?>
+                        </div>
+                    <?php } ?>
+                </div>
+            </header>
+        <!--//Header-->
+
+        <!-- Menú Móvil -->
+            <div id="menu-movil">
+                <a href="#seccion-galeria" class="opcion-menu" data-seccion="galeria" id="galeria-link">
+                    <div class="container">
+                        <div class="text">
+                            Galeria
+                        </div>
+                        <hr>
+                    </div>
+                </a>
+
+                <a href="#seccion-video" class="opcion-menu" data-seccion="video" id="video-link">
+                    <div class="container">
+                        <div class="text">
+                            Video
+                        </div>
+                        <hr>
+                    </div>
+                </a>
+
+                <a href="#seccion-servicios" class="opcion-menu" data-seccion="servicios" id="servicios-link">
+                    <div class="container">
+                        <div class="text">
+                            Servicios
+                        </div>
+                        <hr>
+                    </div>
+                </a>
+
+                <a href="#seccion-habs" class="opcion-menu" data-seccion="habs" id="habs-link">
+                    <div class="container">
+                        <div class="text">
+                            Habitaciones
+                        </div>
+                        <hr>
+                    </div>
+                </a>
+
+                <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="ubicacion-link">
+                    <div class="container">
+                        <div class="text">
+                            Ubicación
+                        </div>
+                        <hr>
+                    </div>
+                </a>
+
+                <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="contacto-link">
+                    <div class="container">
+                        <div class="text">
+                            Contacto
+                        </div>
+                        <hr>
+                    </div>
+                </a>
+            </div>
+        <!-- //Menú Móvil -->
         
         <!--Slider-->
             <div id="seccion-galeria" class="seccion">
