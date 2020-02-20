@@ -35,19 +35,9 @@
                             ]
     );
 
-    $galeria = array(
-        array(
-            "imagen"  => "gal1.jpeg",
-            "nombre" => "Fachada del Hotel",
-        ),
-        array(
-            "imagen"  => "gal2.jpeg",
-            "nombre" => "Habitacion Doble",
-        ),
-        array(
-            "imagen"  => "gal3.jpeg",
-            "nombre" => "Alberca",
-        ),
+    $img_ini = array(
+        "imagen"  => "img-ini.jpg",
+        "nombre" => "Fachada del Hotel",
     );
 
     $video = array(
@@ -159,57 +149,92 @@
         <title><?php echo $info_hotel['nombre']." de ".$info_hotel['ciudad'].", ".$info_hotel['estado']; ?></title>
     </head>
     <body>
-        <!--Header-->
-            <header>
-                <div>
-                    <img class="logo" src="sources/<?php echo $info_hotel['logo']; ?>" alt="Logo">
-                </div>
-                <div class="nombre_hotel">
-                    <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
-                </div>
-                <div class="tels-dsk">
-                    <?php if($info_hotel["telefono_txt"]){ ?>
-                        <div>
-                            <span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?>
-                        </div>
-                    <?php }
+            <!--Header-->
+                <header>
+                    <div>
+                        <img class="logo" src="sources/<?php echo $info_hotel['logo']; ?>" alt="Logo">
+                    </div>
+                    <div class="nombre_hotel">
+                        <h1><span><?php echo $info_hotel['nombre']; ?></span></h1>
+                    </div>
+                    <div class="tels-dsk">
+                        <?php if($info_hotel["telefono_txt"]){ ?>
+                            <div>
+                                <span class="icon-telefono"></span> <?php echo $info_hotel['telefono_txt']; ?>
+                            </div>
+                        <?php }
 
-                    if($info_hotel["whatsapp_txt"]){ ?>
-                        <div>
-                            <img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?>
-                        </div>
-                    <?php } ?>
-                </div>
-                <div id="menu-movil-btn" class="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
-        <!--//Header-->
+                        if($info_hotel["whatsapp_txt"]){ ?>
+                            <div>
+                                <img src="sources/whatsapp.png" alt="Whatsapp"> <?php echo $info_hotel['whatsapp_txt']; ?>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </header>
+            <!--//Header-->
 
-        <!-- Menú Móvil -->
-            <div id="menu-movil">
-                <a href="#seccion-galeria" class="opcion-menu" data-seccion="galeria" id="galeria-link">Galeria</a>
-                <a href="#seccion-video" class="opcion-menu" data-seccion="video" id="video-link">Video</a>
-                <a href="#seccion-servicios" class="opcion-menu" data-seccion="servicios" id="servicios-link">Servicios</a>
-                <a href="#seccion-habs" class="opcion-menu" data-seccion="habs" id="habs-link">Habitaciones</a>
-                <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="ubicacion-link">Ubicación</a>
-				<a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="contacto-link">Contacto</a>
-            </div>
-        <!-- //Menú Móvil -->
+            <!-- Menú Móvil -->
+                <div id="menu-movil">
+                    <a href="#seccion-galeria" class="opcion-menu" data-seccion="galeria" id="galeria-link">
+                        <div class="container">
+                            <div class="text">
+                                Galeria
+                            </div>
+                            <hr>
+                        </div>
+                    </a>
+
+                    <a href="#seccion-video" class="opcion-menu" data-seccion="video" id="video-link">
+                        <div class="container">
+                            <div class="text">
+                                Video
+                            </div>
+                            <hr>
+                        </div>
+                    </a>
+
+                    <a href="#seccion-servicios" class="opcion-menu" data-seccion="servicios" id="servicios-link">
+                        <div class="container">
+                            <div class="text">
+                                Servicios
+                            </div>
+                            <hr>
+                        </div>
+                    </a>
+
+                    <a href="#seccion-habs" class="opcion-menu" data-seccion="habs" id="habs-link">
+                        <div class="container">
+                            <div class="text">
+                                Habitaciones
+                            </div>
+                            <hr>
+                        </div>
+                    </a>
+
+                    <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="ubicacion-link">
+                        <div class="container">
+                            <div class="text">
+                                Ubicación
+                            </div>
+                            <hr>
+                        </div>
+                    </a>
+
+                    <a href="#seccion-contacto" class="opcion-menu" data-seccion="contacto" id="contacto-link">
+                        <div class="container">
+                            <div class="text">
+                                Contacto
+                            </div>
+                            <hr>
+                        </div>
+                    </a>
+                </div>
+            <!-- //Menú Móvil -->
         
         <!--Slider-->
             <div id="seccion-galeria" class="seccion">
-				<div class="frase-home">
-					<span>
-						!Ven y conócenos!
-					</span>
-				</div>
-                <div class="galeria-container galeria">
-                    <?php foreach ($galeria as $key_gal => $img_gal) { ?>
-                        <div><img id="img-gal-<?php echo $key_gal; ?>" src="sources/<?php echo $img_gal["imagen"]; ?>" alt="<?php echo $img_gal["nombre"]; ?>"></div>
-                    <?php } ?>
+                <div class="imagen-inicio">
+                    <img id="img-gal-ini" src="sources/<?php echo $img_ini["imagen"]; ?>" alt="<?php echo $img_ini["nombre"]; ?>">
                 </div>
             </div>
         <!--//Slider-->
@@ -374,7 +399,7 @@
             let height = $(window).width() < 600 ? 186.2 : 250;
 
             // Galería
-                $('.galeria-container').slick({
+            $('.galeria-container').slick({
                     arrows:true,
                     autoplay:true,
                     infinite:true,

@@ -6,7 +6,7 @@ body{
     font-family: $font-text;
 }
 .seccion{
-    width: 100%;
+    width: 99%;
     margin-bottom: 5%;
     @media (min-width:$screen_sm){
         margin-bottom: 3%;
@@ -24,23 +24,32 @@ body{
         max-width: 90%;
     }
 }
+
 //Header
 header{
     display: grid;
     padding-bottom: 1%;
-    grid-template-columns: 40% 45% 15%;
+    grid-template-columns: 100%;
     @media (min-width:$screen_sm){
         grid-template-columns: 20% 60% 20%;
     }
     .logo{
-        padding: 6% 0 0 5%;
-        width: 100%;
+        padding: 3% 0 0 0;
+        display: block;
+        margin: auto;
+        width: 33%;
         @media (min-width:$screen_sm){
-            padding: 5% 0 0 5%;
+            padding: 0;
+            width: 80%;
+            margin: 6% auto;
         }
     }
     .nombre_hotel{
+        display: none;
         padding: 4% 0 0 0;
+        @media (min-width:$screen_sm){
+            display: block;
+        }
         h1{
             margin: 0;
             font-size: 1.4em;
@@ -96,61 +105,93 @@ header{
     height: 0px;
     display: none;
     text-align: right;
-    background-color: $color_2;
     @media (min-width:$screen_sm){
-        border: 2px solid $color_2;
         text-align: center;
         display: block;
         height: auto;
+        width: 85%;
+        margin: auto;
     }
     a{
+        width: 15%;
         padding: 1%;
         display: block;
         color: $color_1;
         text-decoration: none;
-        border-bottom: 2px solid $color_3;
         @media (min-width:$screen_sm){
-            padding: 1%;
+            padding: 0;
             border: none;
-            padding: 2% 4%;
             display: inline-block;
         }
-        &:hover{
-            @media (min-width:$screen_sm){
-                background-color: $color_3;
+        .container{
+            width: 90%;
+            margin: auto;
+            .text{
+                width: 100%;
+                padding: 6% 0;
+                border-radius: 10px;
+            }
+            hr{
+                margin: 8px auto 0 auto;
+                border: 1px solid $color_2;
+            }
+            &:hover hr{
+                @media (min-width:$screen_sm){
+                    animation-name: selectOptionHr;
+                    animation-duration: 1s;
+                    width: 0%;
+                    margin-top: 0;
+                }
+            }
+            &:hover .text{
+                @media (min-width:$screen_sm){
+                    animation-name: selectOption;
+                    animation-duration: 3s;
+                    background-color: $color_2;
+                }
+            }
+            @keyframes selectOptionHr{
+                from {
+                    width: 100%;
+                    height: 1%;
+                    margin-top: 8px;
+                }
+                to {
+                    width: 0%;
+                    height: 0%;
+                    margin-top: 0;
+                }
+            }
+            @keyframes selectOption{
+                from {
+                    background-color: #fff;
+                    color: $color_2;
+                }
+                to {
+                    background-color: $color_2;
+                }
             }
         }
     }
 }
 //-Menú Móvil
 
+.slick-slide{
+    height: auto !important;
+}
 //Galeria
 #seccion-galeria{
-    margin-top: 3%;
+    margin-top: 1%;
     position: relative;
-    .frase-home{
-        position: absolute;
-        z-index: 1;
-        top: 35%;
-        left: 6%;
-        text-align: center;
-        @media (min-width:$screen_sm){
-            left: 40%;
-        }
-        span{
-            color: #fff;
-            display: block;
-            font-size: 2em;
-            text-shadow: 2px 2px 20px #000;
-            font-weight: bold;
-            font-family: sans-serif;
-        }
+    img{
+        height: auto;
+        width: 100%;
     }
 }
 
 .galeria{
     img{
-        height: 310px;
+        height: 300px;
         @media (min-width:$screen_sm){
             height: auto;
             width: 100%;
@@ -217,7 +258,10 @@ header{
             margin: 2% 0;
             display: grid;
             text-align: left;
-            grid-template-columns: 7% 93%;
+            grid-template-columns: 15% 85%;
+            @media (min-width:$screen_sm){
+                grid-template-columns: 10% 90%;
+            }
             .titulo-servicio{
                 margin: 0;
                 text-align: center;
@@ -242,7 +286,7 @@ header{
     .row-habs{
         @media (min-width:$screen_sm){
             display: grid;
-            grid-template-columns: 33% 33% 33%;
+            grid-template-columns: 32% 33% 32%;
             grid-template-rows: auto;
             grid-column-gap: 1%;
             grid-row-gap: 1%;
@@ -251,7 +295,7 @@ header{
             position: relative;
             margin: 2% 0;
             img{
-                height: 320px;
+                height: 385px;
                 @media (min-width:$screen_sm){
                     height: 450px;
                 }
