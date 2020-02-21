@@ -1,2 +1,732 @@
-﻿.icon-servicio-alberca,.icon-servicio-pool{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -32px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-centrodenegocios,.icon-servicio-bussinesscenter{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -64px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-cocineta,.icon-servicio-kitchenette{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -96px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-estacionamiento,.icon-servicio-parking{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -128px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-internet,.icon-servicio-internet{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -160px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-restaurante,.icon-servicio-restaurant{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -192px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-actividadesdealberca,.icon-servicio-poolactivities{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -224px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-actividadesdeplaya,.icon-servicio-seasideactivities{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -256px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-agenciadeviajes,.icon-servicio-travelagency{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -288px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-aireacondicionado,.icon-servicio-airconditioning{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -320px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-albercaclimatizada,.icon-servicio-heatedpool{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -352px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-albercatechada,.icon-servicio-indoorpool{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -384px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-areasverdes,.icon-servicio-greenareas{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -416px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-asadores,.icon-servicio-grills{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -448px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-bar,.icon-servicio-bar{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -480px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-barenalberca,.icon-servicio-poolbar{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -512px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-biblioteca,.icon-servicio-library{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -544px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-caballos,.icon-servicio-horses{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -576px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-cafeteria,.icon-servicio-coffeeshop{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -608px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-cajeroautomatico,.icon-servicio-atm{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -640px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-canchadeportiva,.icon-servicio-sportsfield{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -672px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-chapoteadero,.icon-servicio-wading{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -704px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-clubdeplaya,.icon-servicio-beachclub{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -736px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-cocinacompartida,.icon-servicio-sharedkitchen{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -768px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-concierge,.icon-servicio-concierge{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -800px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-espectaculos,.icon-servicio-shows{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -832px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-estetica,.icon-servicio-beautyshop{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -864px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-gimnasio,.icon-servicio-gym{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -896px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-hidromasaje,.icon-servicio-hydromassage{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -928px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-jacuzzi,.icon-servicio-jacuzzi{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -960px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-jardin,.icon-servicio-garden{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -992px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-juegosinfantiles,.icon-servicio-playground{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1024px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-lavanderia,.icon-servicio-laundry{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1056px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-masajes,.icon-servicio-massages{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1088px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-mini-super,.icon-servicio-mini-super{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1120px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-niñera,.icon-servicio-babysitter{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1152px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-playa,.icon-servicio-beach{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1184px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-rentadeautos,.icon-servicio-carrental{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1216px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-rentadeequipodeportivo,.icon-servicio-rentalofsportsequipment{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1248px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-saladejuntas,.icon-servicio-meetingroom{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1280px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-saladelectura,.icon-servicio-readinglounge{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1312px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-saladetv,.icon-servicio-tvlounge{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1344px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-tv,.icon-servicio-tv{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1376px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-salondejuegos,.icon-servicio-playroom{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1408px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-salonesdeeventos,.icon-servicio-functionrooms{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1440px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-seguridad,.icon-servicio-security{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1472px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-servicioalahabitacion,.icon-servicio-roomservice{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1504px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-serviciomedico,.icon-servicio-medicalservice{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1536px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-spa,.icon-servicio-spa{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1568px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-temazcal,.icon-servicio-temazcal{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1600px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-tiendaboutique,.icon-servicio-boutiqueshop{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1632px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-tours,.icon-servicio-tours{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1664px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-transportegratuito,.icon-servicio-freeofchargetransportation{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1696px !important;display:inline-block;width:32px;height:32px;vertical-align:top}.icon-servicio-zonadeacampar,.icon-servicio-campingarea{background:url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1728px !important;display:inline-block;width:32px;height:32px;vertical-align:top}body{margin:0;font-family:Arial,Sans-serif,serif}.seccion{width:99%;margin-bottom:5%}@media (min-width: 768px){.seccion{margin-bottom:3%}}.seccion h2{text-align:center}.seccion h2 span{padding:0 2%}.logo{max-width:80%}@media (min-width: 768px){.logo{max-width:90%}}header{display:grid;padding-bottom:1%;grid-template-columns:100%}@media (min-width: 768px){header{grid-template-columns:20% 60% 20%}}header .logo{padding:3% 0 0 0;display:block;margin:auto;width:33%}@media (min-width: 768px){header .logo{padding:0;width:80%;margin:6% auto}}header .nombre_hotel{display:none;padding:4% 0 0 0}@media (min-width: 768px){header .nombre_hotel{display:block}}header .nombre_hotel h1{margin:0;font-size:1.4em;text-align:center;font-family:Arial,Sans-serif,serif}@media (min-width: 768px){header .nombre_hotel h1{font-size:1.7em}}header .nombre_hotel h1 span{display:none;vertical-align:sub}@media (min-width: 768px){header .nombre_hotel h1 span{display:block}}header .tels-dsk{display:none;padding:5% 0}@media (min-width: 768px){header .tels-dsk{display:block}}header .tels-dsk div{margin:4% 0}header .tels-dsk span{color:#6f6f6f}header .tels-dsk img{width:20px;vertical-align:bottom}header .menu{cursor:pointer;padding:31% 20% 0% 20%}@media (min-width: 768px){header .menu{display:none}}header .menu span{width:100%;display:block;margin-bottom:25%;border-top:3px solid #000}#menu-movil{height:0px;display:none;text-align:right}@media (min-width: 768px){#menu-movil{text-align:center;display:block;height:auto;width:85%;margin:auto}}#menu-movil a{width:15%;padding:1%;display:block;color:#000;text-decoration:none}@media (min-width: 768px){#menu-movil a{padding:0;border:none;display:inline-block}}#menu-movil a .container{width:90%;margin:auto}#menu-movil a .container .text{width:100%;padding:6% 0;border-radius:10px}#menu-movil a .container hr{margin:8px auto 0 auto;border:1px solid rgba(194,194,194,0.418)}@media (min-width: 768px){#menu-movil a .container:hover hr{animation-name:selectOptionHr;animation-duration:1s;width:0%;margin-top:0}}@media (min-width: 768px){#menu-movil a .container:hover .text{animation-name:selectOption;animation-duration:3s;background-color:rgba(194,194,194,0.418)}}@keyframes selectOptionHr{from{width:100%;height:1%;margin-top:8px}to{width:0%;height:0%;margin-top:0}}@keyframes selectOption{from{background-color:#fff;color:rgba(194,194,194,0.418)}to{background-color:rgba(194,194,194,0.418)}}.slick-slide{height:auto !important}#seccion-galeria{margin-top:1%;position:relative}#seccion-galeria img{height:auto;width:100%}.galeria img{height:300px}@media (min-width: 768px){.galeria img{height:auto;width:100%}}.galeria .slick-arrow{display:none !important;z-index:1}.galeria .slick-arrow::before{font-size:40px}@media (min-width: 768px){.galeria .slick-arrow{display:inline-block !important}}.galeria .slick-prev{left:1%}.galeria .slick-next{right:3%}#seccion-descripcion p{width:92%;margin:5% auto;text-align:justify}@media (min-width: 768px){#seccion-descripcion p{margin:1% auto}}#seccion-servicios{padding-bottom:5%;background-color:rgba(194,194,194,0.418)}@media (min-width: 768px){#seccion-servicios{padding-bottom:1%}}#seccion-servicios h2{padding-top:2%;margin-top:0}#seccion-servicios h3{display:inline-block}#seccion-servicios .row-servicio{margin:0 3% 5% 3%;text-align:center;justify-items:center}@media (min-width: 768px){#seccion-servicios .row-servicio{display:grid;grid-template-columns:48% 48%;grid-template-rows:auto;grid-column-gap:4%}}#seccion-servicios .row-servicio .servicio{width:100%;margin:2% 0;display:grid;text-align:left;grid-template-columns:15% 85%}@media (min-width: 768px){#seccion-servicios .row-servicio .servicio{grid-template-columns:10% 90%}}#seccion-servicios .row-servicio .servicio .titulo-servicio{margin:0;text-align:center}#seccion-servicios .row-servicio .servicio .servicio-container{display:inline-block}#seccion-servicios .row-servicio .servicio .servicio-container span{vertical-align:bottom}#seccion-servicios .row-servicio .servicio .info-servicio{margin:1.5% 0}@media (min-width: 768px){#seccion-habs .row-habs{display:grid;grid-template-columns:32% 33% 32%;grid-template-rows:auto;grid-column-gap:1%;grid-row-gap:1%}}#seccion-habs .row-habs .hab{position:relative;margin:2% 0}#seccion-habs .row-habs .hab img{height:385px}@media (min-width: 768px){#seccion-habs .row-habs .hab img{height:450px}}#seccion-habs .row-habs .hab .descripcion{padding:0 4% 4% 4%;line-height:1.4em}#seccion-habs .row-habs .hab .descripcion h3{margin:2% 0}@media (min-width: 768px){#seccion-contacto{display:grid;grid-template-columns:50% 50%;grid-template-rows:auto;grid-column-gap:1%;grid-row-gap:1%}}#seccion-contacto iframe{width:100%;height:auto}@media (min-width: 768px){#seccion-contacto iframe{width:100%;height:100%}}#seccion-contacto img{width:100%}#seccion-contacto form{margin:4%}#seccion-contacto form .campo-vacio{border:1px solid red}#seccion-contacto form .grupo{margin-bottom:5%;display:grid;grid-template-columns:25% 75%;grid-row-gap:4%}#seccion-contacto form .grupo-2{display:grid;margin-top:12%;grid-template-columns:80% 20%;grid-row-gap:4%}@media (min-width: 768px){#seccion-contacto form .grupo-2{margin-top:8%}}#seccion-contacto form button{margin:3% 0;float:right}#seccion-contacto form #campos-rojos,#seccion-contacto form #envio_fallido{padding-right:5%;color:red;display:none}#seccion-contacto form #envio_hecho{padding-right:5%;color:green;display:none}#to_top{background:#c2c2c2;border-radius:30%;position:fixed;color:#fff;cursor:pointer;display:none;padding:2%;bottom:8%;right:3%}@media (min-width: 768px){#to_top{padding:1%;bottom:24%}}#to_top .arrow-container{position:relative;height:22px;width:19px}#to_top .arrow-container span{position:absolute;bottom:-2px;font-size:1.2em;font-weight:bold;animation-name:jump;animation-duration:1s;animation-iteration-count:infinite}@keyframes jump{0%{bottom:-2px}50%{bottom:3px}100%{bottom:-2px}}footer{width:100%;display:grid;padding:3% 0;margin-top:15%;background-color:rgba(194,194,194,0.418);justify-items:center;grid-template-columns:33% 67%}@media (min-width: 768px){footer{grid-template-columns:50% 50%;margin-top:10%}}footer a{display:inline-block;margin:5%;color:#6f6f6f;font-size:1.5em;text-decoration:none}footer .contacto{width:100%;text-align:center;display:grid;justify-items:center;grid-template-columns:50% 50%}@media (min-width: 768px){footer .contacto{grid-template-columns:33% 33% 33%}}footer .redes-sociales{width:100%;text-align:center;display:grid;justify-items:center;grid-template-columns:25% 25% 25% 25%}
+@charset "UTF-8";
+.icon-servicio-alberca, .icon-servicio-pool {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -32px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-centrodenegocios, .icon-servicio-bussinesscenter {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -64px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-cocineta, .icon-servicio-kitchenette {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -96px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-estacionamiento, .icon-servicio-parking {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -128px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-internet, .icon-servicio-internet {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -160px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-restaurante, .icon-servicio-restaurant {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -192px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-actividadesdealberca, .icon-servicio-poolactivities {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -224px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-actividadesdeplaya, .icon-servicio-seasideactivities {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -256px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-agenciadeviajes, .icon-servicio-travelagency {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -288px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-aireacondicionado, .icon-servicio-airconditioning {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -320px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-albercaclimatizada, .icon-servicio-heatedpool {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -352px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-albercatechada, .icon-servicio-indoorpool {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -384px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-areasverdes, .icon-servicio-greenareas {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -416px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-asadores, .icon-servicio-grills {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -448px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-bar, .icon-servicio-bar {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -480px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-barenalberca, .icon-servicio-poolbar {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -512px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-biblioteca, .icon-servicio-library {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -544px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-caballos, .icon-servicio-horses {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -576px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-cafeteria, .icon-servicio-coffeeshop {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -608px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-cajeroautomatico, .icon-servicio-atm {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -640px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-canchadeportiva, .icon-servicio-sportsfield {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -672px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-chapoteadero, .icon-servicio-wading {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -704px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-clubdeplaya, .icon-servicio-beachclub {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -736px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-cocinacompartida, .icon-servicio-sharedkitchen {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -768px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-concierge, .icon-servicio-concierge {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -800px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-espectaculos, .icon-servicio-shows {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -832px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-estetica, .icon-servicio-beautyshop {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -864px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-gimnasio, .icon-servicio-gym {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -896px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-hidromasaje, .icon-servicio-hydromassage {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -928px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-jacuzzi, .icon-servicio-jacuzzi {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -960px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-jardin, .icon-servicio-garden {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -992px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-juegosinfantiles, .icon-servicio-playground {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1024px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-lavanderia, .icon-servicio-laundry {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1056px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-masajes, .icon-servicio-massages {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1088px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-mini-super, .icon-servicio-mini-super {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1120px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-niñera, .icon-servicio-babysitter {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1152px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-playa, .icon-servicio-beach {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1184px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-rentadeautos, .icon-servicio-carrental {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1216px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-rentadeequipodeportivo, .icon-servicio-rentalofsportsequipment {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1248px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-saladejuntas, .icon-servicio-meetingroom {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1280px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-saladelectura, .icon-servicio-readinglounge {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1312px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-saladetv, .icon-servicio-tvlounge {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1344px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-tv, .icon-servicio-tv {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1376px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-salondejuegos, .icon-servicio-playroom {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1408px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-salonesdeeventos, .icon-servicio-functionrooms {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1440px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-seguridad, .icon-servicio-security {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1472px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-servicioalahabitacion, .icon-servicio-roomservice {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1504px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-serviciomedico, .icon-servicio-medicalservice {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1536px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-spa, .icon-servicio-spa {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1568px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-temazcal, .icon-servicio-temazcal {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1600px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-tiendaboutique, .icon-servicio-boutiqueshop {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1632px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-tours, .icon-servicio-tours {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1664px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-transportegratuito, .icon-servicio-freeofchargetransportation {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1696px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+.icon-servicio-zonadeacampar, .icon-servicio-campingarea {
+  background: url("../sources/iconos-servicios-hotel.png") no-repeat 0px -1728px !important;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top; }
+
+body {
+  margin: 0;
+  font-family: Arial, Sans-serif, serif; }
+
+.seccion {
+  width: 99%;
+  margin-bottom: 5%; }
+  @media (min-width: 768px) {
+    .seccion {
+      margin-bottom: 3%; } }
+  .seccion h2 {
+    text-align: center; }
+    .seccion h2 span {
+      padding: 0 2%; }
+
+.logo {
+  max-width: 80%; }
+  @media (min-width: 768px) {
+    .logo {
+      max-width: 90%; } }
+
+header {
+  display: grid;
+  padding-bottom: 1%;
+  grid-template-columns: 100%; }
+  @media (min-width: 768px) {
+    header {
+      grid-template-columns: 20% 60% 20%; } }
+  header .logo {
+    padding: 3% 0 0 0;
+    display: block;
+    margin: auto;
+    width: 33%; }
+    @media (min-width: 768px) {
+      header .logo {
+        padding: 0;
+        width: 80%;
+        margin: 6% auto; } }
+  header .nombre_hotel {
+    display: none;
+    padding: 4% 0 0 0; }
+    @media (min-width: 768px) {
+      header .nombre_hotel {
+        display: block; } }
+    header .nombre_hotel h1 {
+      margin: 0;
+      font-size: 1.4em;
+      text-align: center;
+      font-family: Arial, Sans-serif, serif; }
+      @media (min-width: 768px) {
+        header .nombre_hotel h1 {
+          font-size: 1.7em; } }
+      header .nombre_hotel h1 span {
+        display: none;
+        vertical-align: sub; }
+        @media (min-width: 768px) {
+          header .nombre_hotel h1 span {
+            display: block; } }
+  header .tels-dsk {
+    display: none;
+    padding: 5% 0; }
+    @media (min-width: 768px) {
+      header .tels-dsk {
+        display: block; } }
+    header .tels-dsk div {
+      margin: 4% 0; }
+    header .tels-dsk span {
+      color: #6f6f6f; }
+    header .tels-dsk img {
+      width: 20px;
+      vertical-align: bottom; }
+  header .menu {
+    cursor: pointer;
+    padding: 31% 20% 0% 20%; }
+    @media (min-width: 768px) {
+      header .menu {
+        display: none; } }
+    header .menu span {
+      width: 100%;
+      display: block;
+      margin-bottom: 25%;
+      border-top: 3px solid #000; }
+
+#menu-movil {
+  height: 0px;
+  display: none;
+  text-align: right; }
+  @media (min-width: 768px) {
+    #menu-movil {
+      text-align: center;
+      display: block;
+      height: auto;
+      width: 85%;
+      margin: auto; } }
+  #menu-movil a {
+    width: 15%;
+    padding: 1%;
+    display: block;
+    color: #000;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      #menu-movil a {
+        padding: 0;
+        border: none;
+        display: inline-block; } }
+    #menu-movil a .container {
+      width: 90%;
+      margin: auto; }
+      #menu-movil a .container .text {
+        width: 100%;
+        padding: 6% 0;
+        border-radius: 10px; }
+      #menu-movil a .container hr {
+        margin: 8px auto 0 auto;
+        border: 1px solid rgba(194, 194, 194, 0.418); }
+      @media (min-width: 768px) {
+        #menu-movil a .container:hover hr {
+          animation-name: selectOptionHr;
+          animation-duration: 1s;
+          width: 0%;
+          margin-top: 0; } }
+      @media (min-width: 768px) {
+        #menu-movil a .container:hover .text {
+          animation-name: selectOption;
+          animation-duration: 3s;
+          background-color: rgba(194, 194, 194, 0.418); } }
+@keyframes selectOptionHr {
+  from {
+    width: 100%;
+    height: 1%;
+    margin-top: 8px; }
+  to {
+    width: 0%;
+    height: 0%;
+    margin-top: 0; } }
+@keyframes selectOption {
+  from {
+    background-color: #fff;
+    color: rgba(194, 194, 194, 0.418); }
+  to {
+    background-color: rgba(194, 194, 194, 0.418); } }
+.slick-slide {
+  height: auto !important; }
+
+#seccion-galeria {
+  margin-top: 1%;
+  position: relative; }
+  #seccion-galeria img {
+    height: auto;
+    width: 100%; }
+
+.galeria img {
+  height: 300px; }
+  @media (min-width: 768px) {
+    .galeria img {
+      height: auto;
+      width: 100%; } }
+.galeria .slick-arrow {
+  display: none !important;
+  z-index: 1; }
+  .galeria .slick-arrow::before {
+    font-size: 40px; }
+  @media (min-width: 768px) {
+    .galeria .slick-arrow {
+      display: inline-block !important; } }
+.galeria .slick-prev {
+  left: 1%; }
+.galeria .slick-next {
+  right: 3%; }
+
+#seccion-descripcion p {
+  width: 92%;
+  margin: 5% auto;
+  text-align: justify; }
+  @media (min-width: 768px) {
+    #seccion-descripcion p {
+      margin: 1% auto; } }
+
+#seccion-servicios {
+  padding-bottom: 5%;
+  background-color: rgba(194, 194, 194, 0.418); }
+  @media (min-width: 768px) {
+    #seccion-servicios {
+      padding-bottom: 1%; } }
+  #seccion-servicios h2 {
+    padding-top: 2%;
+    margin-top: 0; }
+  #seccion-servicios h3 {
+    display: inline-block; }
+  #seccion-servicios .row-servicio {
+    margin: 0 3% 5% 3%;
+    text-align: center;
+    justify-items: center; }
+    @media (min-width: 768px) {
+      #seccion-servicios .row-servicio {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: auto;
+        grid-column-gap: 4%; } }
+    #seccion-servicios .row-servicio .servicio {
+      width: 100%;
+      margin: 2% 0;
+      display: grid;
+      text-align: left;
+      grid-template-columns: 15% 85%; }
+      @media (min-width: 768px) {
+        #seccion-servicios .row-servicio .servicio {
+          grid-template-columns: 10% 90%; } }
+      #seccion-servicios .row-servicio .servicio .titulo-servicio {
+        margin: 0;
+        text-align: center; }
+      #seccion-servicios .row-servicio .servicio .servicio-container {
+        display: inline-block; }
+        #seccion-servicios .row-servicio .servicio .servicio-container span {
+          vertical-align: bottom; }
+      #seccion-servicios .row-servicio .servicio .info-servicio {
+        margin: 1.5% 0; }
+
+@media (min-width: 768px) {
+  #seccion-habs .row-habs {
+    display: grid;
+    grid-template-columns: 32% 33% 32%;
+    grid-template-rows: auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%; } }
+#seccion-habs .row-habs .hab {
+  position: relative;
+  margin: 2% 0; }
+  #seccion-habs .row-habs .hab img {
+    height: 385px; }
+    @media (min-width: 768px) {
+      #seccion-habs .row-habs .hab img {
+        height: 450px; } }
+  #seccion-habs .row-habs .hab .descripcion {
+    padding: 0 4% 4% 4%;
+    line-height: 1.4em; }
+    #seccion-habs .row-habs .hab .descripcion h3 {
+      margin: 2% 0; }
+
+@media (min-width: 768px) {
+  #seccion-contacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%; } }
+#seccion-contacto iframe {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 768px) {
+    #seccion-contacto iframe {
+      width: 100%;
+      height: 100%; } }
+#seccion-contacto img {
+  width: 100%; }
+#seccion-contacto form {
+  margin: 4%; }
+  #seccion-contacto form .campo-vacio {
+    border: 1px solid red; }
+  #seccion-contacto form .grupo {
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-row-gap: 4%; }
+  #seccion-contacto form .grupo-2 {
+    display: grid;
+    margin-top: 12%;
+    grid-template-columns: 80% 20%;
+    grid-row-gap: 4%; }
+    @media (min-width: 768px) {
+      #seccion-contacto form .grupo-2 {
+        margin-top: 8%; } }
+  #seccion-contacto form button {
+    margin: 3% 0;
+    float: right; }
+  #seccion-contacto form #campos-rojos, #seccion-contacto form #envio_fallido {
+    padding-right: 5%;
+    color: red;
+    display: none; }
+  #seccion-contacto form #envio_hecho {
+    padding-right: 5%;
+    color: green;
+    display: none; }
+
+#to_top {
+  background: #c2c2c2;
+  border-radius: 30%;
+  position: fixed;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  padding: 2%;
+  bottom: 8%;
+  right: 3%; }
+  @media (min-width: 768px) {
+    #to_top {
+      padding: 1%;
+      bottom: 24%; } }
+  #to_top .arrow-container {
+    position: relative;
+    height: 22px;
+    width: 19px; }
+    #to_top .arrow-container span {
+      position: absolute;
+      bottom: -2px;
+      font-size: 1.2em;
+      font-weight: bold;
+      animation-name: jump;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; }
+
+@keyframes jump {
+  0% {
+    bottom: -2px; }
+  50% {
+    bottom: 3px; }
+  100% {
+    bottom: -2px; } }
+footer {
+  width: 100%;
+  display: grid;
+  padding: 3% 0;
+  margin-top: 15%;
+  background-color: rgba(194, 194, 194, 0.418);
+  justify-items: center;
+  grid-template-columns: 33% 67%; }
+  @media (min-width: 768px) {
+    footer {
+      grid-template-columns: 50% 50%;
+      margin-top: 10%; } }
+  footer a {
+    display: inline-block;
+    margin: 5%;
+    color: #6f6f6f;
+    font-size: 1.5em;
+    text-decoration: none; }
+  footer .contacto {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%; }
+    @media (min-width: 768px) {
+      footer .contacto {
+        grid-template-columns: 33% 33% 33%; } }
+  footer .redes-sociales {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%; }
+
 /*# sourceMappingURL=main_2.css.map */
