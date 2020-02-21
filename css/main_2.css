@@ -468,7 +468,7 @@ header {
     #menu-movil {
       text-align: center;
       display: block;
-      height: auto;
+      height: 50px;
       width: 85%;
       margin: auto; } }
   #menu-movil a {
@@ -491,7 +491,10 @@ header {
         border-radius: 10px; }
       #menu-movil a .container hr {
         margin: 8px auto 0 auto;
-        border: 1px solid rgba(194, 194, 194, 0.418); }
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgba(194, 194, 194, 0.418); }
       @media (min-width: 768px) {
         #menu-movil a .container:hover hr {
           animation-name: selectOptionHr;

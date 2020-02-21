@@ -108,7 +108,7 @@ header{
     @media (min-width:$screen_sm){
         text-align: center;
         display: block;
-        height: auto;
+        height: 50px;
         width: 85%;
         margin: auto;
     }
@@ -133,7 +133,10 @@ header{
             }
             hr{
                 margin: 8px auto 0 auto;
-                border: 1px solid $color_2;
+                border-top:     none;
+                border-left:    none;
+                border-right:   none;
+                border-bottom:  2px solid $color_2;
             }
             &:hover hr{
                 @media (min-width:$screen_sm){
