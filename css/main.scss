@@ -39,14 +39,13 @@ body{
             }
             .image-container{
                 overflow: hidden;
-                max-height: 300px;
+                height: 65vh;
                 -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-                @media (min-width:$screen_sm){
-                    max-height: 450px;
-                }
+
                 img{
                     width: 60%;
                 }
+
                 div{
                     transform: rotate(-30deg);
                     height: 300px;
